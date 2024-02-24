@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "480833204043",
+    "project_id": "magnifying-glass-with-light",
+    "storage_bucket": "magnifying-glass-with-light.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480833204043:android:4bdda9f295bc36ddc902ce",
+        "android_client_info": {
+          "package_name": "com.magnifying.glass.magnifiercamera.flashlight"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT3HbCx2GUVaFG_OhAyhxAvLA1yRPiYhA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#252525</color>
+    <color name="colorPrimaryDark">#252525</color>
+    <color name="colorAccent">#252525</color>
+    <color name="textcolor">#2a2b2f</color>
+    <color name="seek_tint">#2C444E</color>
+    <color name="rating_bar">#F4BE19</color>
+
+    <color name="activityBgColor2">#E9F0FE</color>
+
+    <color name="rippleColorOnWhite">#272B50</color>
+    <color name="shimmerColor">#DADADA</color>
+    <color name="black">#000</color>
+
+    <color name="ad_attribution_color2">#BEBEBE</color>
+    <color name="rippleColorOnBlack">#94FFFFFF</color>
+    <color name="progressBackgroundTintColor">#94FFFFFF</color>
+
+</resources>

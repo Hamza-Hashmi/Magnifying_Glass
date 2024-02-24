@@ -1,0 +1,69 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Magnifying Glass With Light</string>
+
+    <string name="image">image</string>
+    <string name="close">close</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="background">background</string>
+    <string name="share">Share</string>
+    <string name="live_magnifier">Live Magnifier</string>
+    <string name="image_magnifier">Image Magnifier</string>
+    <string name="ad_attribution">Ad</string>
+    <string name="permissions">Permissions</string>
+    <string name="flash">Flash</string>
+    <string name="sun">Sun</string>
+    <string name="moon">Moon</string>
+    <string name="seek_bar">Seek Bar</string>
+    <string name="zoom">Zoom</string>
+    <string name="draw">draw</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="back">Back</string>
+    <string name="rotate_image">Rotate Image</string>
+    <string name="magnificent_factor">Magnifying Factor</string>
+    <string name="loupe_radius">Loupe Radius</string>
+    <string name="selector">selector</string>
+    <string name="shareText">Start Using Magnifying Glass today with \"Magnifying Glass with Page Magnifier &amp; Flashlight\" - Download here: https://play.google.com/store/apps/details?id=</string>
+    <string name="contentDescription">content_description</string>
+    <string name="get_started">Get Started</string>
+    <string name="install">install</string>
+    <string name="ad_app_icon">ad app icon</string>
+    <string name="_0x">0x</string>
+    <string name="_0">0</string>
+    <string name="_50">50</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="rate_your_experience">Thank you for using our app!</string>
+    <string name="tell_us_how_was_your_experience">Did you find our app helpful and convenient?\n
+Let others know by rating us!</string>
+    <string name="clear_all">Clear All</string>
+    <string name="add_image">Add Image</string>
+    <string name="select_your_option">Select Option</string>
+    <string name="unlimited_access">Unlimited Access</string>
+    <string name="subscribe_on_just_one_click">Subscribe on just one click</string>
+    <string name="per_month">Per Month</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="auto_renewal_on_monthly_basis">Auto Renewal on monthly basis</string>
+    <string name="_x">X</string>
+    <string name="exit">Exit</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="saved_files">Saved Files</string>
+
+    <string name="delete">Delete</string>
+    <string name="pref_db">magnifying_glass_db</string>
+    <string name="save_image">Save</string>
+    <string name="save_image2">Save Image</string>
+    <string name="enter_image_name">Enter image name</string>
+    <string name="sort">sort</string>
+    <string name="grant_permission">Allow Permission</string>
+    <string name="premium_package">Premium Package</string>
+    <string name="loading">loading…</string>
+    <string name="next">Next</string>
+    <string name="done">All done</string>
+    <string name="Details">Details Defined, Files Magnified: Your\n Digital Vision</string>
+    <string name="Closer">Closer Look, Clearer Vision: Image\n Magnifier Precision</string>
+    <string name="livelargesee">Live Large, See Larger with Our\n Magnifier</string>
+    <string name="Language">Language</string>
+
+
+</resources>

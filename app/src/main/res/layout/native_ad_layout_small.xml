@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/callToAction"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:ellipsize="end"
+            android:textColor="@color/white "
+            android:textAllCaps="false"
+            android:backgroundTint="#2C444E"
+            android:textSize="@dimen/_12sdp"
+            android:text="Get Started"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            app:cornerRadius="@dimen/_8sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewMedia"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_100sdp"
+            app:cardCornerRadius="@dimen/_3sdp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/callToAction">
+
+            <com.google.android.gms.ads.nativead.MediaView
+                android:id="@+id/adMedia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/cardViewMedia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardViewMedia"
+            app:layout_constraintTop_toTopOf="@id/cardViewMedia">
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/layout"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/adIcon"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:contentDescription="AD_Icon" />
+
+                    <TextView
+                        android:id="@+id/adHeadline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:ellipsize="end"
+                        android:gravity="top"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:textStyle="bold"
+                        android:maxLines="3"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:id="@+id/ad_attribution"
+                    android:background="@color/ad_attribution_color2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layout"
+                    android:gravity="center"
+                    android:padding="@dimen/_2sdp"
+                    android:text="AD"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_7sdp"
+                    tools:ignore="RelativeOverlap" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    app:layout_constraintTop_toTopOf="@+id/ad_attribution"
+                    app:layout_constraintBottom_toBottomOf="@id/ad_attribution"
+                    app:layout_constraintStart_toEndOf="@id/ad_attribution"
+
+                    android:progressTint="@color/ad_attribution_color2"
+                    android:rating="3"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.gms.ads.nativead.NativeAdView>

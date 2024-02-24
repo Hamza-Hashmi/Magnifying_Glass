@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.magnifyingglass.magnifier">
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+
+    <application
+        android:name="com.example.magnifyingglass.magnifier.utils.MyApp"
+        android:allowBackup="false"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Magnifier">
+        <activity android:name="com.example.magnifyingglass.magnifier.Language.LanguageActivity"
+            android:screenOrientation="nosensor"
+            android:exported="false"/>
+        <activity
+            android:name="com.example.magnifyingglass.magnifier.ui.activites.ImageViewerScreen"
+            android:screenOrientation="nosensor"
+            android:exported="false"/>
+        <activity
+            android:name="com.example.magnifyingglass.magnifier.ui.activites.SavedImagesScreen"
+            android:screenOrientation="nosensor"
+            android:exported="false"/>
+        <activity
+            android:name="com.example.magnifyingglass.magnifier.ui.activites.OnBoardingScreen"
+            android:screenOrientation="nosensor"
+            android:exported="false"/>
+        <activity
+            android:name="com.example.magnifyingglass.magnifier.ui.activites.ImageMagnifierScreen"
+            android:screenOrientation="nosensor"
+            android:exported="false"/>
+        <activity
+            android:name="com.example.magnifyingglass.magnifier.ui.activites.LiveMagnifierScreen"
+            android:screenOrientation="nosensor"
+            android:exported="false"/>
+
+        <activity
+            android:name="com.example.magnifyingglass.magnifier.ui.activites.MainScreen"
+            android:screenOrientation="nosensor"
+            android:exported="false"/>
+        <activity
+            android:name="com.example.magnifyingglass.magnifier.ui.activites.SplashScreen"
+            android:noHistory="true"
+            android:screenOrientation="nosensor"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/app_icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+</manifest>

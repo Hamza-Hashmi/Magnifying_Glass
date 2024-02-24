@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Magnifying Glass With Light</string>
+
+    <string name="image">Imej</string>
+    <string name="close">Tutup</string>
+    <string name="rate_us">Beri Nilai Kami</string>
+    <string name="background">Latar Belakang</string>
+    <string name="share">Kongsi</string>
+    <string name="live_magnifier">Kaca Pembesar Langsung</string>
+    <string name="image_magnifier">Kaca Pembesar Imej</string>
+    <string name="ad_attribution">Iklan</string>
+    <string name="permissions">Kebenaran</string>
+    <string name="flash">Kilat</string>
+    <string name="sun">Matahari</string>
+    <string name="moon">Bulan</string>
+    <string name="seek_bar">Palang Carian</string>
+    <string name="zoom">Zum</string>
+    <string name="draw">Lukis</string>
+    <string name="gallery">Galeri</string>
+    <string name="camera">Kamera</string>
+    <string name="back">Kembali</string>
+    <string name="rotate_image">Putar Imej</string>
+    <string name="magnificent_factor">Faktor Hebat</string>
+    <string name="loupe_radius">Jejari Loupe</string>
+    <string name="selector">Pemilih</string>
+    <string name="shareText">Mulakan menggunakan Kaca Pembesar hari ini dengan "Kaca Pembesar dengan Pembesar Halaman &amp; Lampu Suluh" - Muat turun di sini: https://play.google.com/store/apps/details?id=</string>
+    <string name="contentDescription">huraian_kandungan</string>
+    <string name="get_started">Mula</string>
+    <string name="install">Pasang</string>
+    <string name="ad_app_icon">ikon aplikasi iklan</string>
+    <string name="_0x">0x</string>
+    <string name="_0">0</string>
+    <string name="_50">50</string>
+    <string name="submit">Hantar</string>
+    <string name="cancel">Batal</string>
+    <string name="rate_your_experience">Terima kasih kerana menggunakan aplikasi kami!</string>
+    <string name="tell_us_how_was_your_experience">Adakah anda dapati aplikasi kami membantu dan mudah digunakan?\nBeritahu orang lain dengan memberi nilai kepada kami!</string>
+    <string name="clear_all">Padam Semua</string>
+    <string name="add_image">Tambah Imej</string>
+    <string name="select_your_option">Pilih Pilihan</string>
+    <string name="unlimited_access">Akses Tanpa Had</string>
+    <string name="subscribe_on_just_one_click">Langgan dengan satu klik sahaja</string>
+    <string name="per_month">Sebulan</string>
+    <string name="subscribe">Langgan</string>
+    <string name="auto_renewal_on_monthly_basis">Pemulaian Auto setiap bulan</string>
+    <string name="_x">X</string>
+    <string name="exit">Keluar</string>
+    <string name="privacy_policy">Dasar Privasi</string>
+    <string name="saved_files">Fail Disimpan</string>
+
+    <string name="delete">Padam</string>
+    <string name="pref_db">magnifying_glass_db</string>
+    <string name="save_image">Simpan</string>
+    <string name="save_image2">Simpan Imej</string>
+    <string name="enter_image_name">Masukkan nama imej</string>
+    <string name="sort">Isih</string>
+    <string name="grant_permission">Benarkan Kebenaran</string>
+    <string name="premium_package">Pakej Premium</string>
+    <string name="loading">Memuatkan…</string>
+    <string name="next">Seterusnya</string>
+    <string name="done">Semua selesai</string>
+    <string name="Details">Butiran Ditakrifkan, Fail Di Besarkan: Penglihatan\n Digital Anda</string>
+    <string name="Closer">Pandangan Lebih Dekat, Penglihatan Lebih Jelas: Ketepatan\n Kaca Pembesar Imej</string>
+    <string name="livelargesee">Hidup Besar, Lihat Lebih Besar dengan Kaca Pembesar Kami</string>
+    <string name="Language">Bahasa</string>
+</resources>

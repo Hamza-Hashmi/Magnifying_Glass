@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Magnifying Glass With Light</string>
+
+    <string name="image">تصویر</string>
+    <string name="close">بند کریں</string>
+    <string name="rate_us">ہمیں درجہ دیں</string>
+    <string name="background">پس منظر</string>
+    <string name="share">اشتراک کریں</string>
+    <string name="live_magnifier">لائیو میگنیفائر</string>
+    <string name="image_magnifier">تصویر میگنیفائر</string>
+    <string name="ad_attribution">اشتہار</string>
+    <string name="permissions">اجازتیں</string>
+    <string name="flash">فلیش</string>
+    <string name="sun">سورج</string>
+    <string name="moon">چاند</string>
+    <string name="seek_bar">تلاش بار</string>
+    <string name="zoom">زوم</string>
+    <string name="draw">ڈرا</string>
+    <string name="gallery">گیلری</string>
+    <string name="camera">کیمرا</string>
+    <string name="back">واپس</string>
+    <string name="rotate_image">تصویر گھمائیں</string>
+    <string name="magnificent_factor">شاندار فیکٹر</string>
+    <string name="loupe_radius">لوپ ریڈیائس</string>
+    <string name="selector">منتخب</string>
+    <string name="shareText">آج ہی "میگنیفائر ودھ پیج میگنیفائر اینڈ فلیش لائٹ" استعمال کرنا شروع کریں - یہاں ڈاؤن لوڈ کریں: https://play.google.com/store/apps/details؟id=</string>
+    <string name="contentDescription">مواد کا تفصیل</string>
+    <string name="get_started">شروع ہوں</string>
+    <string name="install">انسٹال</string>
+    <string name="ad_app_icon">اشتہار ایپ آئیکن</string>
+    <string name="_0x">0x</string>
+    <string name="_0">0</string>
+    <string name="_50">50</string>
+    <string name="submit">جمع کرائیں</string>
+    <string name="cancel">منسوخ کریں</string>
+    <string name="rate_your_experience">ہماری ایپ استعمال کرنے کا شکریہ!</string>
+    <string name="tell_us_how_was_your_experience">کیا آپ ہماری ایپ مددگار اور آسان پذیر ہوتی ہے؟ دوسروں کو ہمیں درجہ دے کر بتائیں!</string>
+    <string name="clear_all">سب کچھ صاف کریں</string>
+    <string name="add_image">تصویر شامل کریں</string>
+    <string name="select_your_option">آپ کا انتخاب کریں</string>
+    <string name="unlimited_access">لامحدود رسائی</string>
+    <string name="subscribe_on_just_one_click">صرف ایک کلک میں سبسکرائب کریں</string>
+    <string name="per_month">فی مہینہ</string>
+    <string name="subscribe">سبسکرائب</string>
+    <string name="auto_renewal_on_monthly_basis">ماہانہ خود بخود تجدید</string>
+    <string name="_x">X</string>
+    <string name="exit">باہر نکلیں</string>
+    <string name="privacy_policy">رازداری پالیسی</string>
+    <string name="saved_files">محفوظ شدہ فائلیں</string>
+
+    <string name="delete">حذف کریں</string>
+    <string name="pref_db">magnifying_glass_db</string>
+    <string name="save_image">محفوظ کریں</string>
+    <string name="save_image2">تصویر محفوظ کریں</string>
+    <string name="enter_image_name">تصویر کا نام درج کریں</string>
+    <string name="sort">ترتیب دیں</string>
+    <string name="grant_permission">اجازت دیں</string>
+    <string name="premium_package">پریمیم پیکیج</string>
+    <string name="loading">لوڈ ہو رہا ہے...</string>
+    <string name="next">اگلا</string>
+    <string name="done">سب ہو گیا</string>
+    <string name="Details">تفصیلات معین ہیں، فائلیں بڑھائی گئی ہیں: آپ کا\n ڈیجیٹل ویژن</string>
+    <string name="Closer">زیادہ قریب جائیں، صاف دیکھیں: تصویر\n میگنیفائر پریسیژن</string>
+    <string name="livelargesee">بڑھ کر رہیں، ہمارے میگنیفائر کے ساتھ اور بڑھ کر دیکھیں</string>
+    <string name="Language">زبان</string>
+</resources>

@@ -1,0 +1,148 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    namespace 'com.example.magnifyingglass.magnifier'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.magnifying.glass.magnifiercamera.flashlight"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 3
+        versionName "1.0.2"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        project.archivesBaseName = "Magnifying Glass " + versionName
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            resValue "string", "admob_app_id", "ca-app-pub-3940256099942544~3347511713"
+            resValue "string", "interstitialId", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "splashInterstitialId", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "splashNativeId", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "onBoardingNativeId", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "mainNativeId", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "liveMagnifierNativeId", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "imageMagnifierNativeId", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "savedImagesNativeId", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "viewImageNativeId", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "languagesNativeId", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "exitNativeId", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "app_open_id", "ca-app-pub-3940256099942544/3419835294"
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            resValue "string", "admob_app_id", "ca-app-pub-6435869001181662~9607639506"
+            resValue "string", "interstitialId", "ca-app-pub-6435869001181662/2092945719"
+            resValue "string", "splashInterstitialId", "ca-app-pub-6435869001181662/7732326761"
+            resValue "string", "splashNativeId", "ca-app-pub-6435869001181662/1111924587"
+            resValue "string", "onBoardingNativeId", "ca-app-pub-6435869001181662/7808306828"
+            resValue "string", "mainNativeId", "ca-app-pub-6435869001181662/1242898479"
+            resValue "string", "liveMagnifierNativeId", "ca-app-pub-6435869001181662/8738245117"
+            resValue "string", "imageMagnifierNativeId", "ca-app-pub-6435869001181662/3153394870"
+            resValue "string", "savedImagesNativeId", "ca-app-pub-6435869001181662/1840313200"
+            resValue "string", "viewImageNativeId", "ca-app-pub-6435869001181662/8546673422"
+            resValue "string", "languagesNativeId", "ca-app-pub-6435869001181662/9668183405"
+            resValue "string", "exitNativeId", "ca-app-pub-6435869001181662/7042020067"
+            resValue "string", "app_open_id", "ca-app-pub-6435869001181662/1789693380"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.5.0'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-messaging:23.4.1'
+    implementation 'com.google.firebase:firebase-crashlytics:18.6.2'
+    implementation 'com.google.firebase:firebase-analytics:21.5.1'
+    implementation 'com.google.firebase:firebase-config-ktx:21.6.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+
+    // Adds dependency last
+    implementation 'com.google.android.gms:play-services-ads:22.3.0'
+
+
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.airbnb.android:lottie:4.2.2'
+
+    //shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    implementation 'me.zhanghai.android.materialratingbar:library:1.4.0'
+
+    def lifecycle_version = "2.2.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    //noinspection LifecycleAnnotationProcessorWithJava8
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:2.7.0"
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
+
+
+    // Koin main features for Android (Scope,ViewModel ...)
+    implementation 'io.insert-koin:koin-android:3.2.0'
+
+    // CameraX core library
+    implementation "androidx.camera:camera-core:1.2.0-alpha04"
+    // CameraX Camera2 extensions
+    implementation "androidx.camera:camera-camera2:1.2.0-alpha04"
+    // CameraX Lifecycle library
+    implementation "androidx.camera:camera-lifecycle:1.2.0-alpha04"
+    // CameraX View class
+    implementation 'androidx.camera:camera-view:1.2.0-alpha04'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+
+    //permission handling
+    implementation 'com.guolindev.permissionx:permissionx:1.6.4'
+
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.6.0"))
+
+    // in app review
+    implementation 'com.google.android.play:review:2.0.1'
+
+    // For Kotlin users also add the Kotlin extensions library for Play In-App Review:
+    implementation 'com.google.android.play:review-ktx:2.0.1'
+
+
+    implementation 'com.google.android.ump:user-messaging-platform:2.1.0'
+
+
+    //remote Config
+    implementation 'com.google.firebase:firebase-config'
+
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.2.1'
+
+    // ump sdk
+    implementation 'com.google.android.ump:user-messaging-platform:2.1.0'
+
+}

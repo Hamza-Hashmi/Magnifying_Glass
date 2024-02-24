@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/image_magnifier_background_drawable"
+    android:padding="20dp"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/tvImagePickerSelectorLabel"
+        android:text="@string/select_your_option"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/llCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/live_magnifier"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvImagePickerSelectorLabel">
+
+        <ImageView
+            android:layout_width="@dimen/home_button_icon_size"
+            android:layout_height="@dimen/home_button_icon_size"
+            android:contentDescription="@string/contentDescription"
+            android:padding="18dp"
+            android:src="@drawable/ic_back_camera" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="@string/camera"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llCamera">
+
+        <ImageView
+            android:layout_width="@dimen/home_button_icon_size"
+            android:layout_height="@dimen/home_button_icon_size"
+            android:contentDescription="@string/contentDescription"
+            android:padding="18dp"
+            android:src="@drawable/ic_choose_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="@string/gallery"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-13dp"
+        android:layout_marginEnd="-13dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/ivClose"
+            android:background="@drawable/circle_icon_black_bg_ripple_drawable"
+            android:contentDescription="@string/close"
+            android:padding="5dp"
+            android:src="@drawable/ic_close"
+            android:scaleType="centerInside"
+            android:layout_height="match_parent"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

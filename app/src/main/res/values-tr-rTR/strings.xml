@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Magnifying Glass With Light</string>
+
+    <string name="image">Resim</string>
+    <string name="close">Kapat</string>
+    <string name="rate_us">Bize Puan Verin</string>
+    <string name="background">Arkaplan</string>
+    <string name="share">Paylaş</string>
+    <string name="live_magnifier">Canlı Büyüteç</string>
+    <string name="image_magnifier">Resim Büyüteç</string>
+    <string name="ad_attribution">Reklam</string>
+    <string name="permissions">İzinler</string>
+    <string name="flash">Fener</string>
+    <string name="sun">Güneş</string>
+    <string name="moon">Ay</string>
+    <string name="seek_bar">Arama Çubuğu</string>
+    <string name="zoom">Yakınlaştır</string>
+    <string name="draw">Çiz</string>
+    <string name="gallery">Galeri</string>
+    <string name="camera">Kamera</string>
+    <string name="back">Geri</string>
+    <string name="rotate_image">Resmi Döndür</string>
+    <string name="magnificent_factor">Büyüklük Faktörü</string>
+    <string name="loupe_radius">Lup Yarıçapı</string>
+    <string name="selector">Seçici</string>
+    <string name="shareText">Bugün "Büyüteç ve Sayfa Büyüteç ile El Feneri" uygulamamızı kullanmaya başlayın - İndirme bağlantısı: https://play.google.com/store/apps/details?id=</string>
+    <string name="contentDescription">İçerik Açıklaması</string>
+    <string name="get_started">Başlayın</string>
+    <string name="install">Yükle</string>
+    <string name="ad_app_icon">Reklam Uygulama İkonu</string>
+    <string name="_0x">0x</string>
+    <string name="_0">0</string>
+    <string name="_50">50</string>
+    <string name="submit">Gönder</string>
+    <string name="cancel">İptal</string>
+    <string name="rate_your_experience">Uygulamamızı kullandığınız için teşekkür ederiz!</string>
+    <string name="tell_us_how_was_your_experience">Uygulamamızı kullanışlı ve uygun buldunuz mu?\n Diğer kullanıcılara görüşlerinizi bildirerek bize yardımcı olun!</string>
+    <string name="clear_all">Tümünü Temizle</string>
+    <string name="add_image">Resim Ekle</string>
+    <string name="select_your_option">Seçenek Seç</string>
+    <string name="unlimited_access">Sınırsız Erişim</string>
+    <string name="subscribe_on_just_one_click">Sadece bir tıklama ile abone ol</string>
+    <string name="per_month">Aylık</string>
+    <string name="subscribe">Abone Ol</string>
+    <string name="auto_renewal_on_monthly_basis">Aylık Otomatik Yenileme</string>
+    <string name="_x">X</string>
+    <string name="exit">Çıkış</string>
+    <string name="privacy_policy">Gizlilik Politikası</string>
+    <string name="saved_files">Kaydedilen Dosyalar</string>
+
+    <string name="delete">Sil</string>
+    <string name="pref_db">magnifying_glass_db</string>
+    <string name="save_image">Kaydet</string>
+    <string name="save_image2">Resmi Kaydet</string>
+    <string name="enter_image_name">Resim adını girin</string>
+    <string name="sort">Sırala</string>
+    <string name="grant_permission">İzni Ver</string>
+    <string name="premium_package">Premium Paket</string>
+    <string name="loading">Yükleniyor...</string>
+    <string name="next">Sonraki</string>
+    <string name="done">Tamamlandı</string>
+    <string name="Details">Ayrıntılar Tanımlandı, Dosyalar Büyütüldü: Dijital\n Görüşünüz</string>
+    <string name="Closer">Daha Yakından Bakın, Daha Net Bir Görüş: Resim\n Büyüteci Hassasiyeti</string>
+    <string name="livelargesee">Büyük Yaşayın, Büyüteç ile Daha Büyük Görün</string>
+    <string name="Language">Dil</string>
+</resources>
