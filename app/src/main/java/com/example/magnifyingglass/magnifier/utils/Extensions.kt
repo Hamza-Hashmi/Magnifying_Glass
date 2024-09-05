@@ -22,14 +22,13 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.core.graphics.drawable.DrawableCompat
 import androidx.fragment.app.FragmentActivity
-import com.example.magnifyingglass.magnifier.BuildConfig
 import com.example.magnifyingglass.magnifier.R
 import com.google.android.gms.ads.nativead.NativeAd
 import com.permissionx.guolindev.PermissionX
 import java.io.File
 
-var mainNativeAd: NativeAd? = null
-var languagesNativeAd: NativeAd? = null
+
+
 var exitNativeAd: NativeAd? = null
 
 fun Context.scanMedia(path: String) {
@@ -79,7 +78,7 @@ fun Activity.shareWithUs() {
     )
     shareIntent.putExtra(
         Intent.EXTRA_TEXT,
-        "${getString(R.string.shareText)}${BuildConfig.APPLICATION_ID}"
+        "${getString(R.string.shareText)} com.magnifying.glass.magnifiercamera.flashlight"
     )
     startActivity(Intent.createChooser(shareIntent, "Share via"))
 }
@@ -116,7 +115,7 @@ fun Context.getFileUri(f:File):Uri?{
     return try{
         FileProvider.getUriForFile(
             this,
-            "${BuildConfig.APPLICATION_ID}.provider",
+            "${"com.magnifying.glass.magnifiercamera.flashlight"}.provider",
             f
         )
     }catch (e:Exception){

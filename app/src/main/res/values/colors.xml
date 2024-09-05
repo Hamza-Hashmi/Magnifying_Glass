@@ -16,5 +16,6 @@
     <color name="ad_attribution_color2">#BEBEBE</color>
     <color name="rippleColorOnBlack">#94FFFFFF</color>
     <color name="progressBackgroundTintColor">#94FFFFFF</color>
+    <color name="ads_attr">#2C444E</color>
 
 </resources>

@@ -6,18 +6,16 @@ import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.viewpager.widget.ViewPager
 import com.example.magnifyingglass.magnifier.Language.LanguageActivity
 import com.example.magnifyingglass.magnifier.R
+import com.example.magnifyingglass.magnifier.ads.loadAndShowNativeAd
 import com.example.magnifyingglass.magnifier.databinding.OnBoardingScreenBinding
 import com.example.magnifyingglass.magnifier.ui.adapters.ViewPagerAdapter
 import com.example.magnifyingglass.magnifier.utils.isInternetConnected
-import com.example.magnifyingglass.magnifier.ads.loadAndReturnAd
-import com.example.magnifyingglass.magnifier.ads.loadAndShowNativeAd
-import com.example.magnifyingglass.magnifier.ads.showPriorityAdmobInterstitial
-import com.example.magnifyingglass.magnifier.utils.languagesNativeAd
+import loadAndShowSplashInterstitial
+import showPriorityAdmobInterstitial
 
 class OnBoardingScreen : BaseActivity() {
     private var fragmentDestination = 0
@@ -29,9 +27,15 @@ class OnBoardingScreen : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        if (remoteConfigViewModel.getRemoteConfig(this@OnBoardingScreen)?.InterstitialMain?.value == 1) {
+            loadAndShowSplashInterstitial(
+                true,
+                getString(R.string.splashInterstitialId),
+                getString(R.string.interstitialId)
+            )
+        }
+
         setContentView(binding.root)
-
-
         initViews()
         handleClicks()
 
@@ -59,8 +63,9 @@ class OnBoardingScreen : BaseActivity() {
             binding.viewPager.currentItem = fragmentDestination
         }
         binding.tvDone.setOnClickListener {
-            startActivity(Intent(this@OnBoardingScreen, MainScreen::class.java))
+            startActivity(Intent(this@OnBoardingScreen, LanguageActivity::class.java))
             finish()
+
         }
     }
 

@@ -28,50 +28,50 @@ class RemoteConfigClient {
 @Keep
 data class RemoteConfig(
     @SerializedName("openAppAdID")
-    val openAppAdID: RemoteDefaultVal = RemoteDefaultVal(0),
+    val openAppAdID: RemoteDefaultVal = RemoteDefaultVal(1),
 
 
     @SerializedName("splashNative")
-    val splashNative: RemoteDefaultVal = RemoteDefaultVal(0),
+    val splashNative: RemoteDefaultVal = RemoteDefaultVal(1),
 
 
     @SerializedName("InterstitialMain")
-    val InterstitialMain: RemoteDefaultVal = RemoteDefaultVal(0),
+    val InterstitialMain: RemoteDefaultVal = RemoteDefaultVal(1),
 
     @SerializedName("InterstitialSplash")
-    val InterstitialSplash: RemoteDefaultVal = RemoteDefaultVal(0),
+    val InterstitialSplash: RemoteDefaultVal = RemoteDefaultVal(1),
 
     @SerializedName("mainNative")
-    val mainNative: RemoteDefaultVal = RemoteDefaultVal(0),
+    val mainNative: RemoteDefaultVal = RemoteDefaultVal(1),
 
 
     @SerializedName("liveMagnifierNativeId")
-    val liveMagnifierNativeId: RemoteDefaultVal = RemoteDefaultVal(0),
+    val liveMagnifierNativeId: RemoteDefaultVal = RemoteDefaultVal(1),
 
 
     @SerializedName("imageMagnifierNativeId")
-    val imageMagnifierNativeId: RemoteDefaultVal = RemoteDefaultVal(0),
+    val imageMagnifierNativeId: RemoteDefaultVal = RemoteDefaultVal(1),
 
 
     @SerializedName("savedImagesNativeId")
-    val savedImagesNativeId: RemoteDefaultVal = RemoteDefaultVal(0),
+    val savedImagesNativeId: RemoteDefaultVal = RemoteDefaultVal(1),
 
     @SerializedName("viewImageNativeId")
-    val viewImageNativeId: RemoteDefaultVal = RemoteDefaultVal(0),
+    val viewImageNativeId: RemoteDefaultVal = RemoteDefaultVal(1),
 
 
     @SerializedName("onBoardingNative")
-    val onBoardingNative: RemoteDefaultVal = RemoteDefaultVal(0),
+    val onBoardingNative: RemoteDefaultVal = RemoteDefaultVal(1),
 
     @SerializedName("exitNative")
-    val exitNative: RemoteDefaultVal = RemoteDefaultVal(0),
+    val exitNative: RemoteDefaultVal = RemoteDefaultVal(1),
 
     @SerializedName("languagesNative")
-    val languagesNative: RemoteDefaultVal = RemoteDefaultVal(0)
+    val languagesNative: RemoteDefaultVal = RemoteDefaultVal(1)
 )
 
 @Keep
 data class RemoteDefaultVal(
     @SerializedName("value")
-    val value: Int = 0,
+    val value: Int = 1,
 )

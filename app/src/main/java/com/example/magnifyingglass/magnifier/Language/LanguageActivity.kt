@@ -6,20 +6,13 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
-import androidx.cardview.widget.CardView
-import androidx.core.content.ContextCompat
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.magnifyingglass.magnifier.ui.activites.MainScreen
 import com.example.magnifyingglass.magnifier.R
 import com.example.magnifyingglass.magnifier.ads.loadAndShowNativeAd
-import com.example.magnifyingglass.magnifier.ads.showLoadedNativeAd
-import com.example.magnifyingglass.magnifier.ads.showPriorityAdmobInterstitial
 import com.example.magnifyingglass.magnifier.databinding.ActivityLanguageBinding
 import com.example.magnifyingglass.magnifier.ui.activites.BaseActivity
 import com.example.magnifyingglass.magnifier.utils.isInternetConnected
-import com.example.magnifyingglass.magnifier.utils.languagesNativeAd
-import com.example.magnifyingglass.magnifier.utils.showToast
+import showPriorityAdmobInterstitial
 
 
 class LanguageActivity : BaseActivity(), OnItemClickListener {
@@ -59,6 +52,13 @@ class LanguageActivity : BaseActivity(), OnItemClickListener {
 
         adapter = LanguageAdapter(list,this)
         binding.recyclerview.adapter = adapter
+
+        binding.btnSave.setOnClickListener {
+            navigateToMainActivity()
+        }
+        binding.btnBack.setOnClickListener {
+            finish()
+        }
     }
     override fun onItemClick(position: Int) {
         val selectedLanguage = when (position) {
@@ -101,9 +101,9 @@ class LanguageActivity : BaseActivity(), OnItemClickListener {
     }
 
 
-    override fun onBackPressed() {
+    /*override fun onBackPressed() {
         navigateToMainActivity()
-    }
+    }*/
 
 
 }

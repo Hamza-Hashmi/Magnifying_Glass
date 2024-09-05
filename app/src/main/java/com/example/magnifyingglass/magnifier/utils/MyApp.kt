@@ -15,9 +15,7 @@ import org.koin.core.context.GlobalContext
 import org.koin.core.logger.Level
 
 class MyApp : Application(), LifecycleObserver {
-    companion object {
-        var isForegrounded = false
-    }
+
 
     override fun onCreate() {
         super.onCreate()

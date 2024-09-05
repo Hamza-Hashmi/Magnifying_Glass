@@ -28,32 +28,39 @@
         android:theme="@style/Theme.Magnifier">
         <activity android:name="com.example.magnifyingglass.magnifier.Language.LanguageActivity"
             android:screenOrientation="nosensor"
-            android:exported="false"/>
+            android:exported="false"
+            />
         <activity
             android:name="com.example.magnifyingglass.magnifier.ui.activites.ImageViewerScreen"
             android:screenOrientation="nosensor"
-            android:exported="false"/>
+            android:exported="false"
+            />
         <activity
             android:name="com.example.magnifyingglass.magnifier.ui.activites.SavedImagesScreen"
             android:screenOrientation="nosensor"
-            android:exported="false"/>
+            android:exported="false"
+            />
         <activity
             android:name="com.example.magnifyingglass.magnifier.ui.activites.OnBoardingScreen"
             android:screenOrientation="nosensor"
-            android:exported="false"/>
+            android:exported="false"
+            />
         <activity
             android:name="com.example.magnifyingglass.magnifier.ui.activites.ImageMagnifierScreen"
             android:screenOrientation="nosensor"
-            android:exported="false"/>
+            android:exported="false"
+            />
         <activity
             android:name="com.example.magnifyingglass.magnifier.ui.activites.LiveMagnifierScreen"
             android:screenOrientation="nosensor"
-            android:exported="false"/>
+            android:exported="false"
+            />
 
         <activity
             android:name="com.example.magnifyingglass.magnifier.ui.activites.MainScreen"
             android:screenOrientation="nosensor"
-            android:exported="false"/>
+            android:exported="false"
+        />
         <activity
             android:name="com.example.magnifyingglass.magnifier.ui.activites.SplashScreen"
             android:noHistory="true"

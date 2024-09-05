@@ -3,22 +3,26 @@ package com.example.magnifyingglass.magnifier.ui.activites
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import androidx.appcompat.app.AlertDialog
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.net.toFile
 import com.bumptech.glide.Glide
-import com.example.magnifyingglass.magnifier.ui.models.ImagesModel
 import com.example.magnifyingglass.magnifier.R
 import com.example.magnifyingglass.magnifier.ads.loadAndShowNativeAd
-import com.example.magnifyingglass.magnifier.ads.showPriorityInterstitialAdWithCounter
 import com.example.magnifyingglass.magnifier.databinding.ImageViewerScreenBinding
+import com.example.magnifyingglass.magnifier.ui.models.ImagesModel
 import com.example.magnifyingglass.magnifier.utils.getFileUri
 import com.example.magnifyingglass.magnifier.utils.isInternetConnected
 import com.example.magnifyingglass.magnifier.utils.shareImage
 import com.example.magnifyingglass.magnifier.utils.showToast
+import com.google.android.play.core.review.ReviewException
+import com.google.android.play.core.review.ReviewManagerFactory
+import com.google.android.play.core.review.model.ReviewErrorCode
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import loadAndShowInterstitialWithCounter
+import showPriorityAdmobInterstitial
 import java.io.File
 
 class ImageViewerScreen : BaseActivity() {
@@ -34,7 +38,11 @@ class ImageViewerScreen : BaseActivity() {
         binding = ImageViewerScreenBinding.inflate(layoutInflater)
         if (isInternetConnected() && remoteConfigViewModel.getRemoteConfig(this@ImageViewerScreen)?.InterstitialMain?.value == 1) {
 
-            showPriorityInterstitialAdWithCounter(true, getString(R.string.interstitialId))
+            loadAndShowInterstitialWithCounter(
+                true,
+                getString(R.string.interstitialId),
+                getString(R.string.interstitialId)
+            )
         }
         setContentView(binding.root)
         loadSmallNativeAd()
@@ -125,7 +133,6 @@ class ImageViewerScreen : BaseActivity() {
             }
         }
     }
-
 
 
 }

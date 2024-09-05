@@ -59,11 +59,11 @@ import kotlin.math.max
 import kotlin.math.min
 import com.example.magnifyingglass.magnifier.R
 import com.example.magnifyingglass.magnifier.ads.loadAndShowNativeAd
-import com.example.magnifyingglass.magnifier.ads.loadNativeAD
-import com.example.magnifyingglass.magnifier.ads.showPriorityAdmobInterstitial
 import com.example.magnifyingglass.magnifier.utils.RemoteConfigViewModel
+
 import com.example.magnifyingglass.magnifier.utils.isInternetConnected
 import org.koin.androidx.viewmodel.ext.android.viewModel
+import showPriorityAdmobInterstitial
 
 class CameraXFragment : Fragment() {
     val KEY_EVENT_ACTION = "key_event_action"

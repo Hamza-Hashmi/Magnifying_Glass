@@ -11,13 +11,14 @@
 
         <Button
             android:id="@+id/callToAction"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="@dimen/_45sdp"
             android:ellipsize="end"
-            android:textColor="@color/white "
+            android:textColor="@color/white"
             android:textAllCaps="false"
-            android:backgroundTint="#2C444E"
+            android:backgroundTint="@color/ads_attr"
             android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toEndOf="@id/cardViewMedia"
             android:text="Get Started"
             android:layout_marginHorizontal="@dimen/_8sdp"
             app:cornerRadius="@dimen/_8sdp"
@@ -25,13 +26,13 @@
             app:layout_constraintEnd_toEndOf="parent" />
         <androidx.cardview.widget.CardView
             android:id="@+id/cardViewMedia"
-            android:layout_width="@dimen/_110sdp"
-            android:layout_height="@dimen/_100sdp"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="120dp"
             app:cardCornerRadius="@dimen/_3sdp"
             app:cardElevation="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/callToAction">
+            app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.gms.ads.nativead.MediaView
                 android:id="@+id/adMedia"
@@ -49,7 +50,7 @@
             app:layout_constraintBottom_toBottomOf="@id/cardViewMedia"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/cardViewMedia"
-            app:layout_constraintTop_toTopOf="@id/cardViewMedia">
+            app:layout_constraintTop_toBottomOf="@id/callToAction">
 
 
 
@@ -70,9 +71,9 @@
 
                     <ImageView
                         android:id="@+id/adIcon"
-                        android:layout_width="@dimen/_40sdp"
+                        android:layout_width="@dimen/_25sdp"
                         android:layout_marginTop="@dimen/_2sdp"
-                        android:layout_height="@dimen/_40sdp"
+                        android:layout_height="@dimen/_25sdp"
                         android:contentDescription="AD_Icon" />
 
                     <TextView
@@ -99,7 +100,7 @@
                     android:layout_marginEnd="@dimen/_5sdp"
                     android:layout_marginBottom="@dimen/_5sdp"
                     android:id="@+id/ad_attribution"
-                    android:background="@color/ad_attribution_color2"
+                    android:background="#2C444E"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/layout"
                     android:gravity="center"
@@ -120,7 +121,7 @@
                     app:layout_constraintBottom_toBottomOf="@id/ad_attribution"
                     app:layout_constraintStart_toEndOf="@id/ad_attribution"
 
-                    android:progressTint="@color/ad_attribution_color2"
+                    android:progressTint="#2C444E"
                     android:rating="3"/>
 
 

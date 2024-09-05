@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.PopupMenu
 import com.example.magnifyingglass.magnifier.Language.LanguageActivity
 import com.example.magnifyingglass.magnifier.Language.LocaleHelper
@@ -12,7 +11,6 @@ import com.example.magnifyingglass.magnifier.R
 import com.example.magnifyingglass.magnifier.ads.loadAndReturnAd
 import com.example.magnifyingglass.magnifier.ads.loadAndShowNativeAd
 import com.example.magnifyingglass.magnifier.ads.showLoadedNativeAd
-import com.example.magnifyingglass.magnifier.ads.showPriorityAdmobInterstitial
 import com.example.magnifyingglass.magnifier.databinding.ExitDialogBinding
 import com.example.magnifyingglass.magnifier.databinding.MainScreenBinding
 import com.example.magnifyingglass.magnifier.ui.dialogs.RattingDialog
@@ -20,11 +18,11 @@ import com.example.magnifyingglass.magnifier.utils.checkAndRequestCameraPermissi
 import com.example.magnifyingglass.magnifier.utils.checkAndRequestPermissions
 import com.example.magnifyingglass.magnifier.utils.exitNativeAd
 import com.example.magnifyingglass.magnifier.utils.isInternetConnected
-import com.example.magnifyingglass.magnifier.utils.mainNativeAd
 import com.example.magnifyingglass.magnifier.utils.openActivity
 import com.example.magnifyingglass.magnifier.utils.privacyPolicy
 import com.example.magnifyingglass.magnifier.utils.shareWithUs
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import loadAndShowSplashInterstitial
 
 
 class MainScreen : BaseActivity(){
@@ -38,8 +36,13 @@ class MainScreen : BaseActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         val selectedLanguage= LocaleHelper.getSelectedLanguage(this)
         LocaleHelper.setLocale(this, selectedLanguage)
-        if (isInternetConnected() && remoteConfigViewModel.getRemoteConfig(this@MainScreen)?.InterstitialMain?.value == 1) {
-            showPriorityAdmobInterstitial(true, getString(R.string.interstitialId))
+          if ( remoteConfigViewModel.getRemoteConfig(this@MainScreen)?.InterstitialMain?.value == 1) {
+
+              loadAndShowSplashInterstitial(
+                  true,
+                  getString(R.string.interstitialId),
+                  getString(R.string.interstitialId)
+              )
         }
         super.onCreate(savedInstanceState)
         binding = MainScreenBinding.inflate(layoutInflater)
@@ -151,6 +154,7 @@ class MainScreen : BaseActivity(){
 
 
     }
+
 
     private fun showMenu(view: View) {
         val popupMenu = PopupMenu(this@MainScreen, view)

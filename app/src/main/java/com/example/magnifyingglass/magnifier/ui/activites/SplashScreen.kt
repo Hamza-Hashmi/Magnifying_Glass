@@ -11,19 +11,14 @@ import android.preference.PreferenceManager
 import android.util.Log
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.magnifyingglass.magnifier.Language.LocaleHelper
 import com.example.magnifyingglass.magnifier.R
 import com.example.magnifyingglass.magnifier.ads.OpenApp
-import com.example.magnifyingglass.magnifier.ads.loadAndReturnAd
 import com.example.magnifyingglass.magnifier.ads.loadAndShowNativeAd
-import com.example.magnifyingglass.magnifier.ads.loadPriorityAdmobInterstitial
 import com.example.magnifyingglass.magnifier.databinding.ActivitySplashBinding
 import com.example.magnifyingglass.magnifier.utils.MyApp
 import com.example.magnifyingglass.magnifier.utils.isInternetConnected
-import com.example.magnifyingglass.magnifier.utils.mainNativeAd
-import com.example.magnifyingglass.magnifier.utils.setProgressBarColor
 import com.google.android.gms.ads.MobileAds
 import com.google.android.ump.ConsentForm
 import com.google.android.ump.ConsentInformation
@@ -31,8 +26,8 @@ import com.google.android.ump.ConsentRequestParameters
 import com.google.android.ump.UserMessagingPlatform
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import loadPriorityAdmobInterstitial
 import java.util.concurrent.atomic.AtomicBoolean
 
 
@@ -59,7 +54,6 @@ class SplashScreen : BaseActivity() {
         LocaleHelper.setLocale(this, selectedLanguage)
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
-
         setContentView(binding.root)
 
         requestConsentForm()
@@ -84,6 +78,8 @@ class SplashScreen : BaseActivity() {
 
                 startActivity(Intent(this@SplashScreen, MainScreen::class.java))
                 finish()
+
+
             }
 
         }
@@ -92,7 +88,6 @@ class SplashScreen : BaseActivity() {
     private fun loadAds() {
         if (isInternetConnected()){
             showNativeAd()
-            loadPriorityAdmobInterstitial(getString(R.string.splashInterstitialId))
 
             startHandler(8000)
 

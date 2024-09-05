@@ -6,27 +6,26 @@ import android.graphics.Bitmap
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.net.Uri
-import android.os.*
+import android.os.Bundle
 import android.provider.MediaStore
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.view.Window
-import android.widget.*
+import android.widget.Button
+import android.widget.EditText
+import android.widget.SeekBar
 import android.widget.SeekBar.OnSeekBarChangeListener
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import com.example.magnifyingglass.magnifier.R
-import com.example.magnifyingglass.magnifier.ui.fragments.CameraXFragment
 import com.example.magnifyingglass.magnifier.ads.loadAndShowNativeAd
-import com.example.magnifyingglass.magnifier.ads.showPriorityAdmobInterstitial
-import com.example.magnifyingglass.magnifier.ads.showPriorityInterstitialAdWithCounter
 import com.example.magnifyingglass.magnifier.databinding.ImageMagnifierScreenBinding
 import com.example.magnifyingglass.magnifier.ui.dialogs.ImagePickerDialog
+import com.example.magnifyingglass.magnifier.ui.fragments.CameraXFragment
 import com.example.magnifyingglass.magnifier.utils.checkAndRequestCameraPermissions
-import com.example.magnifyingglass.magnifier.utils.checkAndRequestPermissions
 import com.example.magnifyingglass.magnifier.utils.delayViewClickable
 import com.example.magnifyingglass.magnifier.utils.getFileUri
 import com.example.magnifyingglass.magnifier.utils.getOutputDirectory
@@ -34,11 +33,20 @@ import com.example.magnifyingglass.magnifier.utils.getWindowWidth
 import com.example.magnifyingglass.magnifier.utils.isInternetConnected
 import com.example.magnifyingglass.magnifier.utils.scanMedia
 import com.example.magnifyingglass.magnifier.utils.showToast
+import com.google.android.play.core.review.ReviewException
+import com.google.android.play.core.review.ReviewManagerFactory
+import com.google.android.play.core.review.model.ReviewErrorCode
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import java.io.*
+import loadAndShowInterstitialWithCounter
+import loadAndShowSplashInterstitial
+import showPriorityAdmobInterstitial
+import showPriorityInterstitialAdWithCounter
+import java.io.File
+import java.io.FileOutputStream
+import java.io.OutputStream
 
 class ImageMagnifierScreen : BaseActivity(), View.OnClickListener {
     private lateinit var binding : ImageMagnifierScreenBinding
@@ -51,8 +59,12 @@ class ImageMagnifierScreen : BaseActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ImageMagnifierScreenBinding.inflate(layoutInflater)
-        if ( remoteConfigViewModel.getRemoteConfig(this@ImageMagnifierScreen)?.InterstitialMain?.value == 1) {
-            showPriorityAdmobInterstitial(true, getString(R.string.interstitialId))
+        if (remoteConfigViewModel.getRemoteConfig(this@ImageMagnifierScreen)?.InterstitialMain?.value == 1) {
+            loadAndShowInterstitialWithCounter(
+                true,
+                getString(R.string.interstitialId),
+                getString(R.string.interstitialId)
+            )
         }
         setContentView(binding.root)
         binding.llPlaceHolder.setOnClickListener(this)
@@ -98,7 +110,7 @@ class ImageMagnifierScreen : BaseActivity(), View.OnClickListener {
 
                         showToast("Touch image for zoom")
                         if ( remoteConfigViewModel.getRemoteConfig(this@ImageMagnifierScreen)?.InterstitialMain?.value == 1) {
-                            showPriorityAdmobInterstitial(true, getString(R.string.interstitialId))
+                            loadAndShowSplashInterstitial(true,getString(R.string.interstitialId),getString(R.string.interstitialId))
                         }
                     } catch (e: Exception) {
                         e.printStackTrace()
@@ -357,13 +369,45 @@ class ImageMagnifierScreen : BaseActivity(), View.OnClickListener {
 
                         showToast("Touch image for zoom")
                         if ( remoteConfigViewModel.getRemoteConfig(this@ImageMagnifierScreen)?.InterstitialMain?.value == 1) {
-                            showPriorityAdmobInterstitial(true, getString(R.string.interstitialId))
+                            loadAndShowSplashInterstitial(true,getString(R.string.interstitialId),getString(R.string.interstitialId))
+
+
                         }
                     }catch (e:Exception){
                         e.printStackTrace()
                     }
                 }
             }
+        }
+    }
+    override fun onBackPressed() {
+        //val manager = FakeReviewManager(this@VoiceTranslationActivity)
+        requestReview()
+    }
+
+    private fun requestReview() {
+        try {
+
+            val manager = ReviewManagerFactory.create(this@ImageMagnifierScreen)
+            manager.requestReviewFlow().addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    val reviewInfo = task.result
+                    manager.launchReviewFlow(this@ImageMagnifierScreen, reviewInfo)
+                    // The review dialog might show depending on quota
+                    // The API doesn't provide a way for us to check whether it
+                    // was actually shown
+                    finish()
+                } else {
+                    @ReviewErrorCode val reviewErrorCode =
+                        (task.getException() as ReviewException).errorCode
+                    // We got an error log or handle it,
+                    // This error means we won't be able to show the dialog
+                    finish()
+                }
+            }
+        }catch (e:Exception){
+            Log.e("TAG", "onBackPressed: ${e.message}" )
+
         }
     }
 
@@ -396,11 +440,6 @@ class ImageMagnifierScreen : BaseActivity(), View.OnClickListener {
             return image
 
         return Bitmap.createScaledBitmap(image, scaleWidth.toInt(), scaleHeight.toInt(), false)
-    }
-
-
-    override fun onBackPressed() {
-        super.onBackPressed()
     }
 
 

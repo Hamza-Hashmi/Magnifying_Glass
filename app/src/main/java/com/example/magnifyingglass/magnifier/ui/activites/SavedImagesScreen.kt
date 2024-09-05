@@ -5,18 +5,21 @@ import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.magnifyingglass.magnifier.R
 import com.example.magnifyingglass.magnifier.ads.loadAndShowNativeAd
-import com.example.magnifyingglass.magnifier.ads.showPriorityAdmobInterstitial
-import com.example.magnifyingglass.magnifier.ads.showPriorityInterstitialAdWithCounter
-import com.example.magnifyingglass.magnifier.ui.models.ImagesModel
-import com.example.magnifyingglass.magnifier.ui.adapters.ImagesAdapter
 import com.example.magnifyingglass.magnifier.databinding.SavedImagesScreenBinding
+import com.example.magnifyingglass.magnifier.ui.adapters.ImagesAdapter
+import com.example.magnifyingglass.magnifier.ui.models.ImagesModel
 import com.example.magnifyingglass.magnifier.utils.getOutputDirectory
 import com.example.magnifyingglass.magnifier.utils.isInternetConnected
-import kotlinx.coroutines.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import loadAndShowSplashInterstitial
+import showPriorityAdmobInterstitial
 import java.io.File
 
 class SavedImagesScreen : BaseActivity() {
@@ -29,10 +32,16 @@ class SavedImagesScreen : BaseActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = SavedImagesScreenBinding.inflate(layoutInflater)
-        if (remoteConfigViewModel.getRemoteConfig(this@SavedImagesScreen)?.InterstitialMain?.value == 1) {
-            showPriorityAdmobInterstitial(true, getString(R.string.interstitialId))
+
+        if (isInternetConnected() && remoteConfigViewModel.getRemoteConfig(this@SavedImagesScreen)?.InterstitialMain?.value == 1) {
+
+            loadAndShowSplashInterstitial(
+                true,
+                getString(R.string.interstitialId),
+                getString(R.string.interstitialId)
+            )
         }
+        binding = SavedImagesScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         mSharedPrefrences = getSharedPreferences(getString(R.string.pref_db), Context.MODE_PRIVATE)

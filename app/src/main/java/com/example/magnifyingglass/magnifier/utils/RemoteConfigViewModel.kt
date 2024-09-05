@@ -24,7 +24,6 @@ class RemoteConfigViewModel(application: Application, private val repository: Re
                }
             }
             .addOnFailureListener {
-
             }
     }
 
