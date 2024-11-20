@@ -7,7 +7,7 @@
     <string name="rate_us">Rate Us</string>
     <string name="background">background</string>
     <string name="share">Share</string>
-    <string name="live_magnifier">Live Magnifier</string>
+    <string name="live_magnifier">Live\nMagnifier</string>
     <string name="image_magnifier">Image Magnifier</string>
     <string name="ad_attribution">Ad</string>
     <string name="permissions">Permissions</string>
@@ -48,7 +48,7 @@ Let others know by rating us!</string>
     <string name="_x">X</string>
     <string name="exit">Exit</string>
     <string name="privacy_policy">Privacy Policy</string>
-    <string name="saved_files">Saved Files</string>
+    <string name="saved_files">Saved\nFiles</string>
 
     <string name="delete">Delete</string>
     <string name="pref_db">magnifying_glass_db</string>
