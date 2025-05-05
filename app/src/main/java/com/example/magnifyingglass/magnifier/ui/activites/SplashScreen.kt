@@ -15,7 +15,10 @@ import androidx.core.content.ContextCompat
 import com.example.magnifyingglass.magnifier.Language.LocaleHelper
 import com.example.magnifyingglass.magnifier.R
 import com.example.magnifyingglass.magnifier.ads.OpenApp
+import com.example.magnifyingglass.magnifier.ads.loadAndReturnAd
 import com.example.magnifyingglass.magnifier.ads.loadAndShowNativeAd
+import com.example.magnifyingglass.magnifier.ads.obNativeAd1
+import com.example.magnifyingglass.magnifier.ads.obNativeAdFull
 import com.example.magnifyingglass.magnifier.databinding.ActivitySplashBinding
 import com.example.magnifyingglass.magnifier.utils.MyApp
 import com.example.magnifyingglass.magnifier.utils.isInternetConnected
@@ -27,7 +30,6 @@ import com.google.android.ump.UserMessagingPlatform
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import loadPriorityAdmobInterstitial
 import java.util.concurrent.atomic.AtomicBoolean
 
 
@@ -56,7 +58,11 @@ class SplashScreen : BaseActivity() {
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        requestConsentForm()
+        if (isInternetConnected()) {
+            requestConsentForm()
+        } else {
+            startHandler(2000)
+        }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if(ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) ==
@@ -67,35 +73,29 @@ class SplashScreen : BaseActivity() {
             }
         }
 
-
         binding.getStartedBtn.setOnClickListener {
             binding.getStartedBtn.isEnabled = false
             if (isFirstLaunch()) {
-
+                val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
+                sharedPreferences.edit().putBoolean("first_launch", false).apply()
                 startActivity(Intent(this@SplashScreen, OnBoardingScreen::class.java))
                 finish()
             } else {
-
                 startActivity(Intent(this@SplashScreen, MainScreen::class.java))
                 finish()
-
-
             }
-
         }
     }
 
     private fun loadAds() {
         if (isInternetConnected()){
             showNativeAd()
-
             startHandler(8000)
-
         }
         else{
             binding.progressBar.visibility = View.GONE
             binding.getStartedBtn.visibility = View.VISIBLE
-            binding.layoutNative.visibility = View.GONE
+            binding.adFrame.visibility = View.GONE
         }
     }
 
@@ -109,11 +109,28 @@ class SplashScreen : BaseActivity() {
         }, delayTime)
     }
     private fun showNativeAd(){
+        if (isInternetConnected() && remoteConfigViewModel.getRemoteConfig(this)?.onBoardingNative?.value == 1) {
             loadAndShowNativeAd(
-                binding.layoutNative,
+                binding.adFrame,
+                binding.shimmerFrameLayout.root,
                 R.layout.native_ad_layout_main,
                 getString(R.string.splashNativeId)
             )
+        } else {
+            binding.adFrame.visibility = View.GONE
+        }
+
+        //Pre load native ads
+        if (isInternetConnected() && remoteConfigViewModel.getRemoteConfig(this)?.onBoardingNative?.value == 1 && isFirstLaunch()) {
+            //native full
+            loadAndReturnAd(this, getString(R.string.onBoardingNativeIdFull)) {
+                obNativeAdFull = it
+            }
+            //native simple
+            loadAndReturnAd(this, getString(R.string.onBoardingNativeId)) {
+                obNativeAd1 = it
+            }
+        }
     }
 
     private fun initializeRemoteConfig() {
@@ -130,7 +147,7 @@ class SplashScreen : BaseActivity() {
                             OpenApp(application as MyApp)
                         }
                     }else{
-                        binding.layoutNative.visibility = View.GONE
+                        binding.adFrame.visibility = View.GONE
                         startHandler(5000)
                     }
 
@@ -138,8 +155,6 @@ class SplashScreen : BaseActivity() {
             }
 
         }
-
-
     }
 
 
@@ -204,10 +219,6 @@ class SplashScreen : BaseActivity() {
     private fun isFirstLaunch(): Boolean {
         val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
         val isFirstLaunch = sharedPreferences.getBoolean("first_launch", true)
-        if (isFirstLaunch) {
-            // Update the preference to false for future launches
-            sharedPreferences.edit().putBoolean("first_launch", false).apply()
-        }
         return isFirstLaunch
     }
 

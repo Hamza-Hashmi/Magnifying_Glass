@@ -63,13 +63,13 @@ class ImagesAdapter(var context: Context, var bindind:SavedImagesScreenBinding, 
         fun bindData(m: ImagesModel, position: Int){
             binding.tvName.text = m.name
             binding.tvDate.text = getFormattedDate(m.uri)
-            binding.tvDate.let {
-                if(it.text.isEmpty()){
-                    it.visibility = View.GONE
-                }else{
-                    it.visibility = View.VISIBLE
-                }
-            }
+//            binding.tvDate.let {
+//                if(it.text.isEmpty()){
+//                    it.visibility = View.GONE
+//                }else{
+//                    it.visibility = View.VISIBLE
+//                }
+//            }
             Glide.with(context)
                 .load(m.uri)
                 .override(500,500)

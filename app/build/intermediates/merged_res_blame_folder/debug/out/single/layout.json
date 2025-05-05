@@ -1,0 +1,134 @@
+[
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/activity_splash.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/native_ad_layout_full.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/native_ad_layout_full.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/options_dialog_layout.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/options_dialog_layout.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/activity_language.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/activity_language.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/live_magnifier_screen.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/live_magnifier_screen.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/activity_pdf_magnifier.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/activity_pdf_magnifier.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/activity_settings.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/exit_dialog.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/exit_dialog.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/language_card_design.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/language_card_design.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/image_viewer_screen.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/image_viewer_screen.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/image_magnifier_screen.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/image_magnifier_screen.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/listitem_images.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/listitem_images.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/fragment_camera_x.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/fragment_camera_x.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/native_ad_layout_loader.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/native_ad_layout_loader.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/on_boarding_row.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/on_boarding_row.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/on_boarding_screen.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/on_boarding_screen.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/saved_images_screen.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/saved_images_screen.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/save_image_dialog_layout.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/save_image_dialog_layout.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/native_ad_layout_small.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/native_ad_layout_small.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/fragment_ad_full.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/fragment_ad_full.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/fragment__one.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/fragment__one.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/fragment__three.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/fragment__three.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/native_ad_full_shimmer_layout.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/native_ad_full_shimmer_layout.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/native_ad_layout_loader_small.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/native_ad_layout_loader_small.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/main_screen.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/main_screen.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/fragment__two.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/fragment__two.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/activity_flash_light.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/activity_flash_light.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/image_picker.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/image_picker.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/layout_ratting_dialog.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/layout_ratting_dialog.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/activity_billing.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/activity_billing.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/native_ad_layout_main.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/native_ad_layout_main.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/ad_loading_dialog.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/ad_loading_dialog.xml"
+    },
+    {
+        "merged": "com.example.magnifyingglass.magnifier.app-mergeDebugResources-73:/layout/fragment_four.xml",
+        "source": "com.example.magnifyingglass.magnifier.app-main-76:/layout/fragment_four.xml"
+    }
+]

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Automatically generated file. DO NOT MODIFY -->
+
+    <!-- Value from build type: release -->
+    <string name="admob_app_id" translatable="false">ca-app-pub-6435869001181662~9607639506</string>
+    <!-- Value from build type: release -->
+    <string name="app_open_id" translatable="false">ca-app-pub-6435869001181662/1789693380</string>
+    <!-- Value from build type: release -->
+    <string name="bannerId" translatable="false">ca-app-pub-6435869001181662/7793246644</string>
+    <!-- Value from build type: release -->
+    <string name="exitNativeId" translatable="false">ca-app-pub-6435869001181662/7042020067</string>
+    <!-- Value from build type: release -->
+    <string name="imageMagnifierNativeId" translatable="false">ca-app-pub-6435869001181662/3153394870</string>
+    <!-- Value from build type: release -->
+    <string name="interstitialId" translatable="false">ca-app-pub-6435869001181662/2092945719</string>
+    <!-- Value from build type: release -->
+    <string name="languagesNativeId" translatable="false">ca-app-pub-6435869001181662/9668183405</string>
+    <!-- Value from build type: release -->
+    <string name="liveMagnifierNativeId" translatable="false">ca-app-pub-6435869001181662/8738245117</string>
+    <!-- Value from build type: release -->
+    <string name="mainNativeId" translatable="false">ca-app-pub-6435869001181662/1242898479</string>
+    <!-- Value from build type: release -->
+    <string name="onBoardingNativeId" translatable="false">ca-app-pub-6435869001181662/7808306828</string>
+    <!-- Value from build type: release -->
+    <string name="pdfViewerNativeId" translatable="false">ca-app-pub-6435869001181662/5652773230</string>
+    <!-- Value from build type: release -->
+    <string name="savedImagesNativeId" translatable="false">ca-app-pub-6435869001181662/1840313200</string>
+    <!-- Value from build type: release -->
+    <string name="settingsNativeId" translatable="false">ca-app-pub-6435869001181662/3029645173</string>
+    <!-- Value from build type: release -->
+    <string name="splashInterstitialId" translatable="false">ca-app-pub-6435869001181662/7732326761</string>
+    <!-- Value from build type: release -->
+    <string name="splashNativeId" translatable="false">ca-app-pub-6435869001181662/1111924587</string>
+    <!-- Value from build type: release -->
+    <string name="viewImageNativeId" translatable="false">ca-app-pub-6435869001181662/8546673422</string>
+
+</resources>

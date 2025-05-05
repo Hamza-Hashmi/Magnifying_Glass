@@ -65,4 +65,12 @@
     <string name="Closer">আস্তে আস্তে দেখুন, স্পষ্ট দৃষ্টিভাব: চিত্র বৃদ্ধি</string>
     <string name="livelargesee">বড় থাকুন, আমাদের বৃদ্ধির সাথে বড় দেখুন</string>
     <string name="Language">ভাষা</string>
+    <string name="tap_to_turn_off">ফ্ল্যাশলাইট বন্ধ করতে বোতামটি আলতো চাপুন</string>
+    <string name="tap_to_turn_on">ফ্ল্যাশলাইট চালু করতে বোতামে ট্যাপ করুন</string>
+    <string name="magnifying_glass">ম্যাগনিফাইং গ্লাস</string>
+    <string name="setting">সেটিং</string>
+    <string name="share_app">অ্যাপ শেয়ার করুন</string>
+    <string name="app_version">অ্যাপ সংস্করণ</string>
+    <string name="languages">ভাষা</string>
+    <string name="try_premium">প্রিমিয়াম ব্যবহার করে দেখুন</string>
 </resources>

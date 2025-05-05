@@ -64,4 +64,12 @@
     <string name="Closer">और करीब से देखें, और स्पष्ट दृष्टिकोण पाएं: छवि\n मैग्निफायिंग ग्लास की सटीकता</string>
     <string name="livelargesee">बड़ा रहें, हमारे साथ बड़ा देखें:\n हमारी मैग्निफायर के साथ</string>
     <string name="Language">भाषा</string>
+    <string name="tap_to_turn_off">फ्लैशलाइट बंद करने के लिए बटन पर टैप करें</string>
+    <string name="tap_to_turn_on">फ्लैशलाइट चालू करने के लिए बटन पर टैप करें</string>
+    <string name="magnifying_glass">आवर्धक ग्लास</string>
+    <string name="setting">सेटिंग</string>
+    <string name="share_app">ऐप शेयर करें</string>
+    <string name="app_version">ऐप वर्शन</string>
+    <string name="languages">भाषाएँ</string>
+    <string name="try_premium">प्रीमियम आज़माएँ</string>
 </resources>

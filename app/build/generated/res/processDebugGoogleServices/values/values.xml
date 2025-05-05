@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">480833204043</string>
+    <string name="google_api_key" translatable="false">AIzaSyAT3HbCx2GUVaFG_OhAyhxAvLA1yRPiYhA</string>
+    <string name="google_app_id" translatable="false">1:480833204043:android:4bdda9f295bc36ddc902ce</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAT3HbCx2GUVaFG_OhAyhxAvLA1yRPiYhA</string>
+    <string name="google_storage_bucket" translatable="false">magnifying-glass-with-light.appspot.com</string>
+    <string name="project_id" translatable="false">magnifying-glass-with-light</string>
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activites.SettingsActivity"
+    android:background="@drawable/app_bg">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="@dimen/home_small_icons_size"
+        android:layout_height="@dimen/home_small_icons_size"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:elevation="@dimen/_8sdp"
+        android:src="@drawable/backnew"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleText"
+        style="@style/titleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:gravity="center"
+        android:text="@string/setting"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="@id/btnBack"
+        app:layout_constraintStart_toEndOf="@id/btnBack"
+        app:layout_constraintTop_toTopOf="@id/btnBack" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="@drawable/image_magnifier_background_drawable"
+        app:layout_constraintTop_toTopOf="@+id/guideline7">
+
+
+        <TextView
+            android:id="@+id/btnPrem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:fontFamily="@font/bold"
+            android:visibility="gone"
+            android:background="@drawable/setting_prem_bg"
+            android:text="@string/try_premium"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorPrimary"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            app:drawableStartCompat="@drawable/ic_set_prem" />
+
+        <TextView
+            android:id="@+id/btnLang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:fontFamily="@font/bold"
+            android:text="@string/languages"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorPrimary"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            app:drawableStartCompat="@drawable/ic_set_lang" />
+
+
+        <TextView
+            android:id="@+id/btnRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:fontFamily="@font/bold"
+            android:text="@string/rate_us"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorPrimary"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            app:drawableStartCompat="@drawable/ic_set_rate" />
+
+        <TextView
+            android:id="@+id/btnShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:fontFamily="@font/bold"
+            android:text="@string/share_app"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorPrimary"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            app:drawableStartCompat="@drawable/ic_set_share" />
+
+        <TextView
+            android:id="@+id/btnPrivacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:fontFamily="@font/bold"
+            android:text="@string/privacy_policy"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorPrimary"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            app:drawableStartCompat="@drawable/ic_set_privacy" />
+
+        <TextView
+            android:id="@+id/btnVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:fontFamily="@font/bold"
+            android:text="@string/app_version"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorPrimary"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            app:drawableStartCompat="@drawable/ic_set_version" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_native"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <FrameLayout
+            android:id="@+id/adFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <include
+            android:id="@+id/shimmerFrameLayout" layout="@layout/native_ad_layout_loader" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

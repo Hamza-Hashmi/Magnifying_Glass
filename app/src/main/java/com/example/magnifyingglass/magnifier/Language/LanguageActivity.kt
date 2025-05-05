@@ -89,14 +89,14 @@ class LanguageActivity : BaseActivity(), OnItemClickListener {
     }
     private fun showNative() {
         if (isInternetConnected() && remoteConfigViewModel.getRemoteConfig(this@LanguageActivity)?.languagesNative?.value == 1){
-
                 loadAndShowNativeAd(
-                    binding.layoutNative,
-                    R.layout.native_ad_layout_small,
+                    binding.adFrame,
+                    binding.shimmerFrameLayout.root,
+                    R.layout.native_ad_layout_main,
                     getString(R.string.languagesNativeId)
                 )
         }else{
-            binding.layoutNative.visibility = View.GONE
+            binding.adFrame.visibility = View.GONE
         }
     }
 

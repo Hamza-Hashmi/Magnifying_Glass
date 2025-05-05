@@ -65,5 +65,13 @@
     <string name="Closer">نظرة أقرب، رؤية أوضح: دقة عدسة مكبرة الصور</string>
     <string name="livelargesee">حياة كبيرة، ارى أكبر مع عدسة مكبرة لدينا</string>
     <string name="Language">اللغة</string>
+    <string name="tap_to_turn_off">اضغط على الزر لإيقاف تشغيل المصباح اليدوي</string>
+    <string name="tap_to_turn_on">اضغط على الزر لتشغيل المصباح اليدوي</string>
+    <string name="magnifying_glass">عدسة مكبرة</string>
+    <string name="setting">الإعدادات</string>
+    <string name="share_app">مشاركة التطبيق</string>
+    <string name="app_version">إصدار التطبيق</string>
+    <string name="languages">اللغات</string>
+    <string name="try_premium">جرب النسخة المميزة</string>
 
 </resources>

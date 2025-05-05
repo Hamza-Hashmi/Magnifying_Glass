@@ -64,4 +64,12 @@
     <string name="Closer">より近く見て、より明確なビジョン: 画像\n 拡大鏡の精度</string>
     <string name="livelargesee">大きく生きて、当社の拡大鏡でより大きく見る</string>
     <string name="Language">言語</string>
+    <string name="tap_to_turn_off">ボタンをタップして懐中電灯をオフにします</string>
+    <string name="tap_to_turn_on">ボタンをタップして懐中電灯をオンにします</string>
+    <string name="magnifying_glass">虫眼鏡</string>
+    <string name="setting">設定</string>
+    <string name="share_app">アプリを共有</string>
+    <string name="app_version">アプリのバージョン</string>
+    <string name="languages">言語</string>
+    <string name="try_premium">プレミアムを試す</string>
 </resources>

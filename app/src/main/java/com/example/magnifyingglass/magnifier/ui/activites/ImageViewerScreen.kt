@@ -26,11 +26,11 @@ import showPriorityAdmobInterstitial
 import java.io.File
 
 class ImageViewerScreen : BaseActivity() {
-    lateinit var binding:ImageViewerScreenBinding
+    lateinit var binding: ImageViewerScreenBinding
 
     companion object {
-        var imagesModelsGlobal: ImagesModel?=null
-        var isImageDelete:Boolean = false
+        var imagesModelsGlobal: ImagesModel? = null
+        var isImageDelete: Boolean = false
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,10 +54,10 @@ class ImageViewerScreen : BaseActivity() {
     }
 
     private fun loadSmallNativeAd() {
-        if(isInternetConnected() && remoteConfigViewModel.getRemoteConfig(this@ImageViewerScreen)?.viewImageNativeId?.value == 1){
-
+        if (isInternetConnected() && remoteConfigViewModel.getRemoteConfig(this@ImageViewerScreen)?.viewImageNativeId?.value == 1) {
             loadAndShowNativeAd(
-                binding.layoutNativeLarge,
+                binding.adFrame,
+                binding.shimmerFrameLayout.root,
                 R.layout.native_ad_layout_small,
                 getString(R.string.viewImageNativeId)
 
@@ -66,7 +66,7 @@ class ImageViewerScreen : BaseActivity() {
     }
 
     private fun initImage(m: ImagesModel) {
-        binding.titleText.text = m.name
+//        binding.titleText.text = m.name
         Glide.with(this)
             .load(m.uri)
             .into(binding.ivImage)
@@ -92,13 +92,19 @@ class ImageViewerScreen : BaseActivity() {
                     .setPositiveButton("YES") { _, _ ->
                         deleteImage()
                     }
-                    .setNegativeButton("NO",null)
+                    .setNegativeButton("NO", null)
                     .create()
                 dialog.show()
-                dialog.getButton(android.app.AlertDialog.BUTTON_POSITIVE).setTextColor(resources.getColor(
-                    R.color.colorPrimary))
-                dialog.getButton(android.app.AlertDialog.BUTTON_NEGATIVE).setTextColor(resources.getColor(
-                    R.color.colorPrimary))
+                dialog.getButton(android.app.AlertDialog.BUTTON_POSITIVE).setTextColor(
+                    resources.getColor(
+                        R.color.colorPrimary
+                    )
+                )
+                dialog.getButton(android.app.AlertDialog.BUTTON_NEGATIVE).setTextColor(
+                    resources.getColor(
+                        R.color.colorPrimary
+                    )
+                )
             }
         }
         binding.btnShareImage.setOnClickListener {
@@ -110,8 +116,8 @@ class ImageViewerScreen : BaseActivity() {
                     }, 1000
                 )
             }
-            imagesModelsGlobal?.uri?.toFile()?.let { f->
-                getFileUri(f)?.let { uri->
+            imagesModelsGlobal?.uri?.toFile()?.let { f ->
+                getFileUri(f)?.let { uri ->
                     shareImage(uri)
                 }
             }
@@ -123,11 +129,11 @@ class ImageViewerScreen : BaseActivity() {
             imagesModelsGlobal?.uri?.path?.let {
                 val b = File(it)
                 val d = b.delete()
-                if(d){
+                if (d) {
                     showToast("image deleted!")
                     isImageDelete = true
                     onBackPressed()
-                }else{
+                } else {
                     showToast("Something went wrong!")
                 }
             }

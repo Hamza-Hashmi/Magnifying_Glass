@@ -1,0 +1,117 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.magnifyingglass.magnifier.test.app-merged_res-5:/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\AndroidDevelopment\\Hamza\\Magnifying_Glass\\app\\build\\generated\\res\\resValues\\androidTest\\debug\\values\\gradleResValues.xml",
+                    "from": {
+                        "startLines": "6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "161,306,450,591,736,891,1038,1188,1342,1487,1638,1788,1940,2089,2242,2389",
+                        "endColumns": "100,99,96,100,110,102,105,109,100,106,105,107,104,108,102,105",
+                        "endOffsets": "257,401,542,687,842,989,1139,1293,1438,1589,1739,1891,2040,2193,2340,2490"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,156,256,353,454,565,668,774,884,985,1092,1198,1306,1411,1520,1623",
+                        "endColumns": "100,99,96,100,110,102,105,109,100,106,105,107,104,108,102,105",
+                        "endOffsets": "151,251,348,449,560,663,769,879,980,1087,1193,1301,1406,1515,1618,1724"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-3\\68e2bb3aa7da92f6bea402e82bcf7821\\transformed\\jetified-core-1.5.0\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "4,11",
+                        "startColumns": "0,0",
+                        "startOffsets": "176,544",
+                        "endLines": "10,17",
+                        "endColumns": "8,8",
+                        "endOffsets": "543,909"
+                    },
+                    "to": {
+                        "startLines": "18,25",
+                        "startColumns": "4,4",
+                        "startOffsets": "1729,2101",
+                        "endLines": "24,31",
+                        "endColumns": "8,8",
+                        "endOffsets": "2096,2466"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.example.magnifyingglass.magnifier.test.app-merged_res-5:/values-v21_values-v21.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-3\\68e2bb3aa7da92f6bea402e82bcf7821\\transformed\\jetified-core-1.5.0\\res\\values-v21\\values.xml",
+                    "from": {
+                        "startLines": "4,13",
+                        "startColumns": "0,0",
+                        "startOffsets": "180,655",
+                        "endLines": "12,21",
+                        "endColumns": "8,8",
+                        "endOffsets": "654,1127"
+                    },
+                    "to": {
+                        "startLines": "2,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,534",
+                        "endLines": "10,19",
+                        "endColumns": "8,8",
+                        "endOffsets": "529,1006"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.example.magnifyingglass.magnifier.test.app-merged_res-5:/values-v18_values-v18.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-3\\68e2bb3aa7da92f6bea402e82bcf7821\\transformed\\jetified-core-1.5.0\\res\\values-v18\\values.xml",
+                    "from": {
+                        "startLines": "4,12",
+                        "startColumns": "0,0",
+                        "startOffsets": "180,596",
+                        "endLines": "11,19",
+                        "endColumns": "8,8",
+                        "endOffsets": "595,1009"
+                    },
+                    "to": {
+                        "startLines": "2,10",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,475",
+                        "endLines": "9,17",
+                        "endColumns": "8,8",
+                        "endOffsets": "470,888"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.example.magnifyingglass.magnifier.test.app-merged_res-5:/values-v28_values-v28.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-3\\68e2bb3aa7da92f6bea402e82bcf7821\\transformed\\jetified-core-1.5.0\\res\\values-v28\\values.xml",
+                    "from": {
+                        "startLines": "4,13",
+                        "startColumns": "0,0",
+                        "startOffsets": "180,659",
+                        "endLines": "12,21",
+                        "endColumns": "8,8",
+                        "endOffsets": "658,1135"
+                    },
+                    "to": {
+                        "startLines": "2,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,538",
+                        "endLines": "10,19",
+                        "endColumns": "8,8",
+                        "endOffsets": "533,1014"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.magnifying.glass.magnifiercamera.flashlight",
+  "variantName": "debug",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 11,
+      "versionName": "1.0.10",
+      "outputFile": "Magnifying Glass 1.0.10-debug.apk"
+    }
+  ],
+  "elementType": "File"
+}

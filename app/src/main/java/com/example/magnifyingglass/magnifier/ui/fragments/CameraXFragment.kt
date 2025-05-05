@@ -43,12 +43,18 @@ import androidx.core.net.toFile
 import androidx.fragment.app.Fragment
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.example.magnifyingglass.magnifier.MagnifierCamerax.LumaListenerMagnifier
+import com.example.magnifyingglass.magnifier.R
+import com.example.magnifyingglass.magnifier.ads.loadAndShowNativeAd
 import com.example.magnifyingglass.magnifier.databinding.FragmentCameraXBinding
 import com.example.magnifyingglass.magnifier.utils.ANIMATION_FAST_MILLIS
 import com.example.magnifyingglass.magnifier.utils.ANIMATION_SLOW_MILLIS
 import com.example.magnifyingglass.magnifier.utils.Constants
+import com.example.magnifyingglass.magnifier.utils.RemoteConfigViewModel
 import com.example.magnifyingglass.magnifier.utils.getOutputDirectory
+import com.example.magnifyingglass.magnifier.utils.isInternetConnected
 import com.example.magnifyingglass.magnifier.utils.showToast
+import org.koin.androidx.viewmodel.ext.android.viewModel
+import showPriorityAdmobInterstitial
 import java.io.File
 import java.nio.ByteBuffer
 import java.util.ArrayDeque
@@ -57,13 +63,6 @@ import java.util.concurrent.Executors
 import kotlin.math.abs
 import kotlin.math.max
 import kotlin.math.min
-import com.example.magnifyingglass.magnifier.R
-import com.example.magnifyingglass.magnifier.ads.loadAndShowNativeAd
-import com.example.magnifyingglass.magnifier.utils.RemoteConfigViewModel
-
-import com.example.magnifyingglass.magnifier.utils.isInternetConnected
-import org.koin.androidx.viewmodel.ext.android.viewModel
-import showPriorityAdmobInterstitial
 
 class CameraXFragment : Fragment() {
     val KEY_EVENT_ACTION = "key_event_action"
@@ -313,12 +312,13 @@ class CameraXFragment : Fragment() {
             if (it.isInternetConnected() && remoteViewModel.getRemoteConfig(it)?.liveMagnifierNativeId?.value == 1 ){
 
                 it.loadAndShowNativeAd(
-                    binding.layoutNative,
+                    binding.adFrame,
+                    binding.shimmerFrameLayout.root,
                     R.layout.native_ad_layout_small,
                     getString(R.string.liveMagnifierNativeId)
                 )
             }else{
-                binding.layoutNative.visibility = View.GONE
+                binding.adFrame.visibility = View.GONE
             }
         }
     }
@@ -451,7 +451,7 @@ class CameraXFragment : Fragment() {
 
     private fun cameraPreviewStarted() {
         previewFreezed = false
-        binding.freezePreviewBtn.setImageResource(com.example.magnifyingglass.magnifier.R.drawable.ic_resume)
+        binding.freezePreviewBtn.setImageResource(R.drawable.ic_pause)
         cameraControl?.setLinearZoom(zoomLevel)
         cameraControl?.enableTorch(Constants.isTorchOn)
         initExposureValues()
@@ -502,9 +502,6 @@ class CameraXFragment : Fragment() {
             captureImage()
         }
 
-
-
-
         // Setup for button used to switch cameras
         binding.changeCameraBtn.let {
 
@@ -545,8 +542,8 @@ class CameraXFragment : Fragment() {
             SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 exposureLevel = minExposureValue + progress
-                binding.brightnessValueText.text = exposureLevel.toString()
-                binding.brightnessLabel.text = exposureLevel.toString()
+//                binding.brightnessValueText.text = exposureLevel.toString()
+//                binding.brightnessLabel.text = exposureLevel.toString()
                 updateCameraExposure()
             }
 
@@ -564,7 +561,7 @@ class CameraXFragment : Fragment() {
         binding.freezePreviewBtn.setOnClickListener {
             stopCrashing()
             if(previewFreezed){
-                binding.freezePreviewBtn.setImageResource(com.example.magnifyingglass.magnifier.R.drawable.ic_resume)
+                binding.freezePreviewBtn.setImageResource(R.drawable.ic_pause)
                 bindCameraUseCases()
                 binding.apply {
                     takePhotoBtn.isEnabled = true
@@ -574,7 +571,7 @@ class CameraXFragment : Fragment() {
                 }
             }else{
                 previewFreezed = true
-                binding.freezePreviewBtn.setImageResource(com.example.magnifyingglass.magnifier.R.drawable.ic_play)
+                binding.freezePreviewBtn.setImageResource(R.drawable.ic_play_n)
                 cameraProvider?.unbind(preview)
                 binding.apply {
                     takePhotoBtn.isEnabled = false
@@ -763,7 +760,7 @@ class CameraXFragment : Fragment() {
     override fun onResume() {
         super.onResume()
         if(previewFreezed){
-            binding.freezePreviewBtn.setImageResource(com.example.magnifyingglass.magnifier.R.drawable.ic_resume)
+            binding.freezePreviewBtn.setImageResource(R.drawable.ic_pause)
             binding.apply {
                 takePhotoBtn.isEnabled = true
                 changeCameraBtn.isEnabled = true

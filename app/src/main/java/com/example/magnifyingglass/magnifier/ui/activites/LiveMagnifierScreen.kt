@@ -40,7 +40,7 @@ class LiveMagnifierScreen : BaseActivity() {
         }
     }
 
-    override fun onBackPressed() {
+    /*override fun onBackPressed() {
         //val manager = FakeReviewManager(this@VoiceTranslationActivity)
       requestReview()
     }
@@ -69,5 +69,5 @@ class LiveMagnifierScreen : BaseActivity() {
             Log.e("TAG", "onBackPressed: ${e.message}" )
 
         }
-    }
+    }*/
 }

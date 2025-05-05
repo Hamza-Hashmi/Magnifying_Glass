@@ -6,72 +6,81 @@
     <uses-permission android:name="android.permission.FLASHLIGHT" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
     <uses-feature
         android:name="android.hardware.camera.flash"
         android:required="false" />
 
-
     <application
-        android:name="com.example.magnifyingglass.magnifier.utils.MyApp"
+        android:name=".utils.MyApp"
         android:allowBackup="false"
-        android:largeHeap="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/app_icon"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@drawable/app_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Magnifier">
-        <activity android:name="com.example.magnifyingglass.magnifier.Language.LanguageActivity"
-            android:screenOrientation="nosensor"
-            android:exported="false"
-            />
         <activity
-            android:name="com.example.magnifyingglass.magnifier.ui.activites.ImageViewerScreen"
-            android:screenOrientation="nosensor"
-            android:exported="false"
-            />
+            android:name=".ui.activites.BillingActivity"
+            android:exported="false" />
         <activity
-            android:name="com.example.magnifyingglass.magnifier.ui.activites.SavedImagesScreen"
-            android:screenOrientation="nosensor"
-            android:exported="false"
-            />
+            android:name=".ui.activites.PdfMagnifierActivity"
+            android:exported="false" />
         <activity
-            android:name="com.example.magnifyingglass.magnifier.ui.activites.OnBoardingScreen"
-            android:screenOrientation="nosensor"
-            android:exported="false"
-            />
+            android:name=".ui.activites.SettingsActivity"
+            android:exported="false" />
         <activity
-            android:name="com.example.magnifyingglass.magnifier.ui.activites.ImageMagnifierScreen"
-            android:screenOrientation="nosensor"
-            android:exported="false"
-            />
+            android:name=".ui.activites.FlashLightActivity"
+            android:exported="false" />
         <activity
-            android:name="com.example.magnifyingglass.magnifier.ui.activites.LiveMagnifierScreen"
-            android:screenOrientation="nosensor"
+            android:name=".Language.LanguageActivity"
             android:exported="false"
-            />
-
+            android:screenOrientation="nosensor" />
         <activity
-            android:name="com.example.magnifyingglass.magnifier.ui.activites.MainScreen"
-            android:screenOrientation="nosensor"
+            android:name=".ui.activites.ImageViewerScreen"
             android:exported="false"
-        />
+            android:screenOrientation="nosensor" />
         <activity
-            android:name="com.example.magnifyingglass.magnifier.ui.activites.SplashScreen"
+            android:name=".ui.activites.SavedImagesScreen"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.activites.OnBoardingScreen"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.activites.ImageMagnifierScreen"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.activites.LiveMagnifierScreen"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.activites.MainScreen"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.activites.SplashScreen"
+            android:exported="true"
             android:noHistory="true"
             android:screenOrientation="nosensor"
-            android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/admob_app_id" />
@@ -81,6 +90,7 @@
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/colorPrimary" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -91,4 +101,5 @@
                 android:resource="@xml/file_paths" />
         </provider>
     </application>
+
 </manifest>

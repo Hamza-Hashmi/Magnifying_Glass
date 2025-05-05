@@ -14,8 +14,8 @@ android {
         applicationId "com.magnifying.glass.magnifiercamera.flashlight"
         minSdkVersion 21
         targetSdkVersion 34
-        versionCode 9
-        versionName "1.0.8"
+        versionCode 11
+        versionName "1.0.10"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         project.archivesBaseName = "Magnifying Glass " + versionName
@@ -34,6 +34,7 @@ android {
             resValue "string", "splashInterstitialId", "ca-app-pub-3940256099942544/1033173712"
             resValue "string", "splashNativeId", "ca-app-pub-3940256099942544/2247696110"
             resValue "string", "onBoardingNativeId", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "onBoardingNativeIdFull", "ca-app-pub-3940256099942544/2247696110"
             resValue "string", "mainNativeId", "ca-app-pub-3940256099942544/2247696110"
             resValue "string", "liveMagnifierNativeId", "ca-app-pub-3940256099942544/2247696110"
             resValue "string", "imageMagnifierNativeId", "ca-app-pub-3940256099942544/2247696110"
@@ -41,7 +42,10 @@ android {
             resValue "string", "viewImageNativeId", "ca-app-pub-3940256099942544/2247696110"
             resValue "string", "languagesNativeId", "ca-app-pub-3940256099942544/2247696110"
             resValue "string", "exitNativeId", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "settingsNativeId", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "pdfViewerNativeId", "ca-app-pub-3940256099942544/2247696110"
             resValue "string", "app_open_id", "ca-app-pub-3940256099942544/3419835294"
+            resValue ("string", "bannerId", "ca-app-pub-3940256099942544/2014213617")
         }
         release {
             minifyEnabled false
@@ -51,6 +55,7 @@ android {
             resValue "string", "splashInterstitialId", "ca-app-pub-6435869001181662/7732326761"
             resValue "string", "splashNativeId", "ca-app-pub-6435869001181662/1111924587"
             resValue "string", "onBoardingNativeId", "ca-app-pub-6435869001181662/7808306828"
+            resValue "string", "onBoardingNativeIdFull", "ca-app-pub-6435869001181662/7565389585"
             resValue "string", "mainNativeId", "ca-app-pub-6435869001181662/1242898479"
             resValue "string", "liveMagnifierNativeId", "ca-app-pub-6435869001181662/8738245117"
             resValue "string", "imageMagnifierNativeId", "ca-app-pub-6435869001181662/3153394870"
@@ -58,7 +63,10 @@ android {
             resValue "string", "viewImageNativeId", "ca-app-pub-6435869001181662/8546673422"
             resValue "string", "languagesNativeId", "ca-app-pub-6435869001181662/9668183405"
             resValue "string", "exitNativeId", "ca-app-pub-6435869001181662/7042020067"
+            resValue "string", "settingsNativeId", "ca-app-pub-6435869001181662/3029645173"
+            resValue "string", "pdfViewerNativeId", "ca-app-pub-6435869001181662/5652773230"
             resValue "string", "app_open_id", "ca-app-pub-6435869001181662/1789693380"
+            resValue ("string", "bannerId", "ca-app-pub-6435869001181662/7793246644")
         }
     }
 
@@ -81,6 +89,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-crashlytics:18.6.2'
     implementation 'com.google.firebase:firebase-analytics:21.5.1'
     implementation 'com.google.firebase:firebase-config-ktx:21.6.1'
+    implementation 'androidx.activity:activity:1.9.3'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
@@ -133,8 +142,6 @@ dependencies {
     // For Kotlin users also add the Kotlin extensions library for Play In-App Review:
     implementation 'com.google.android.play:review-ktx:2.0.1'
 
-
-
     //remote Config
     implementation 'com.google.firebase:firebase-config'
 
@@ -144,4 +151,25 @@ dependencies {
     // ump sdk
     implementation 'com.google.android.ump:user-messaging-platform:2.1.0'
 
+    //Vertical Seekbar
+    implementation 'com.h6ah4i.android.widget.verticalseekbar:verticalseekbar:1.0.0'
+
+    //RoundedImageView
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //Pdf Viewer
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+
+    // in app billing
+    implementation 'com.android.billingclient:billing:7.0.0'
+
+    //Timber
+    implementation 'com.jakewharton.timber:timber:5.0.1'
+
+    //Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1"
+
+    // room db
+    implementation "androidx.room:room-runtime:2.6.1"
 }

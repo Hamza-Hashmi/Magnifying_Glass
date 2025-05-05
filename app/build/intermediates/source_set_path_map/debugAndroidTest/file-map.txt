@@ -1,0 +1,6 @@
+com.example.magnifyingglass.magnifier.test.app-jetified-annotation-experimental-1.4.0-0 C:\Users\dell\.gradle\caches\transforms-3\447abc03f1dd055b6c84401520ed7580\transformed\jetified-annotation-experimental-1.4.0\res
+com.example.magnifyingglass.magnifier.test.app-jetified-core-1.5.0-1 C:\Users\dell\.gradle\caches\transforms-3\68e2bb3aa7da92f6bea402e82bcf7821\transformed\jetified-core-1.5.0\res
+com.example.magnifyingglass.magnifier.test.app-androidTest-2 D:\AndroidDevelopment\Hamza\Magnifying_Glass\app\build\generated\res\resValues\androidTest\debug
+com.example.magnifyingglass.magnifier.test.app-mergeDebugAndroidTestResources-3 D:\AndroidDevelopment\Hamza\Magnifying_Glass\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.magnifyingglass.magnifier.test.app-mergeDebugAndroidTestResources-4 D:\AndroidDevelopment\Hamza\Magnifying_Glass\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.magnifyingglass.magnifier.test.app-merged_res-5 D:\AndroidDevelopment\Hamza\Magnifying_Glass\app\build\intermediates\merged_res\debugAndroidTest

@@ -143,10 +143,10 @@ class ImageMagnifierScreen : BaseActivity(), View.OnClickListener {
 
     private fun showNativeAd() {
         if(isInternetConnected() && remoteConfigViewModel.getRemoteConfig(this@ImageMagnifierScreen)?.imageMagnifierNativeId?.value == 1){
-            loadAndShowNativeAd(binding.layoutNative,R.layout.native_ad_layout_small,getString(R.string.imageMagnifierNativeId))
+            loadAndShowNativeAd(binding.adFrame, binding.shimmerFrameLayout.root, R.layout.native_ad_layout_small,getString(R.string.imageMagnifierNativeId))
 
         }else{
-            binding.layoutNative.visibility = View.GONE
+            binding.adFrame.visibility = View.GONE
         }
     }
 

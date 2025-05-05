@@ -64,4 +64,12 @@
     <string name="Closer">زیادہ قریب جائیں، صاف دیکھیں: تصویر\n میگنیفائر پریسیژن</string>
     <string name="livelargesee">بڑھ کر رہیں، ہمارے میگنیفائر کے ساتھ اور بڑھ کر دیکھیں</string>
     <string name="Language">زبان</string>
+    <string name="tap_to_turn_off">ٹارچ کو بند کرنے کے لیے بٹن کو تھپتھپائیں۔</string>
+    <string name="tap_to_turn_on">ٹارچ آن کرنے کے لیے بٹن کو تھپتھپائیں۔</string>
+    <string name="magnifying_glass">میگنفائنگ گلاس</string>
+    <string name="setting">ترتیب</string>
+    <string name="share_app">ایپ شیئر کریں۔</string>
+    <string name="app_version">ایپ ورژن</string>
+    <string name="languages">زبانیں</string>
+    <string name="try_premium">Premium آزمائیں۔</string>
 </resources>

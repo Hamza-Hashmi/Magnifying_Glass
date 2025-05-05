@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="activityBgColor2">#E9F0FE</color>
+    <color name="ad_attribution_color2">#BEBEBE</color>
+    <color name="ads_attr">#2C444E</color>
+    <color name="black">#000</color>
+    <color name="black_50">#80000000</color>
+    <color name="colorAccent">#252525</color>
+    <color name="colorPrimary">#252525</color>
+    <color name="colorPrimaryDark">#252525</color>
+    <color name="progressBackgroundTintColor">#94FFFFFF</color>
+    <color name="rating_bar">#F4BE19</color>
+    <color name="rippleColorOnBlack">#94FFFFFF</color>
+    <color name="rippleColorOnWhite">#272B50</color>
+    <color name="seek_tint">#2C444E</color>
+    <color name="shimmerColor">#DADADA</color>
+    <color name="textColorOnWhite">#18457F</color>
+    <color name="textcolor">#2a2b2f</color>
+    <color name="white">#FFFFFF</color>
+    <dimen name="camera_icon_size">38dp</dimen>
+    <dimen name="home_button_icon_size">70dp</dimen>
+    <dimen name="home_small_icons_size">34dp</dimen>
+    <string name="Closer">Closer Look, Clearer Vision: Image\n Magnifier Precision</string>
+    <string name="Details">Details Defined, Files Magnified: Your\n Digital Vision</string>
+    <string name="Language">Language</string>
+    <string name="_0">0</string>
+    <string name="_0x">0x</string>
+    <string name="_50">50</string>
+    <string name="_x">X</string>
+    <string name="ad_app_icon">ad app icon</string>
+    <string name="ad_attribution">Ad</string>
+    <string name="add_image">Add Image</string>
+    <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="app_name">Magnifying Glass With Light</string>
+    <string name="app_open_id" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="app_version">App Version</string>
+    <string name="auto_renewal_on_monthly_basis">Auto Renewal on monthly basis</string>
+    <string name="back">Back</string>
+    <string name="background">background</string>
+    <string name="bannerId" translatable="false">ca-app-pub-3940256099942544/2014213617</string>
+    <string name="camera">Camera</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear_all">Clear All</string>
+    <string name="close">close</string>
+    <string name="com.google.firebase.crashlytics.mapping_file_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">00000000000000000000000000000000</string>
+    <string name="contentDescription">content_description</string>
+    <string name="delete">Delete</string>
+    <string name="done">All done</string>
+    <string name="draw">draw</string>
+    <string name="enter_image_name">Enter image name</string>
+    <string name="exit">Exit</string>
+    <string name="exitNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="flash">Flash</string>
+    <string name="gallery">Gallery</string>
+    <string name="gcm_defaultSenderId" translatable="false">480833204043</string>
+    <string name="get_started">Get Started</string>
+    <string name="google_api_key" translatable="false">AIzaSyAT3HbCx2GUVaFG_OhAyhxAvLA1yRPiYhA</string>
+    <string name="google_app_id" translatable="false">1:480833204043:android:4bdda9f295bc36ddc902ce</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAT3HbCx2GUVaFG_OhAyhxAvLA1yRPiYhA</string>
+    <string name="google_storage_bucket" translatable="false">magnifying-glass-with-light.appspot.com</string>
+    <string name="grant_permission">Allow Permission</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image">image</string>
+    <string name="imageMagnifierNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="image_magnifier">Image Magnifier</string>
+    <string name="install">install</string>
+    <string name="interstitialId" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="languages">Languages</string>
+    <string name="languagesNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="liveMagnifierNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="live_magnifier">Live\nMagnifier</string>
+    <string name="livelargesee">Live Large, See Larger with Our\n Magnifier</string>
+    <string name="loading">loading…</string>
+    <string name="loupe_radius">Loupe Radius</string>
+    <string name="magnificent_factor">Magnifying Factor</string>
+    <string name="magnifying_glass">Magnifying Glass</string>
+    <string name="mainNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="moon">Moon</string>
+    <string name="next">Next</string>
+    <string name="onBoardingNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="onBoardingNativeIdFull" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="pdfViewerNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="per_month">Per Month</string>
+    <string name="permissions">Permissions</string>
+    <string name="pref_db">magnifying_glass_db</string>
+    <string name="premium_package">Premium Package</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="project_id" translatable="false">magnifying-glass-with-light</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="rate_your_experience">Thank you for using our app!</string>
+    <string name="remoteTopic" translatable="false">Magnifier_remote_configuration</string>
+    <string name="rotate_image">Rotate Image</string>
+    <string name="save_image">Save</string>
+    <string name="save_image2">Save Image</string>
+    <string name="savedImagesNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="saved_files">Saved Files</string>
+    <string name="seek_bar">Seek Bar</string>
+    <string name="select_your_option">Select Option</string>
+    <string name="selector">selector</string>
+    <string name="setting">Setting</string>
+    <string name="settingsNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="share">Share</string>
+    <string name="shareText">Start Using Magnifying Glass today with \"Magnifying Glass With Light\" - Download here: https://play.google.com/store/apps/details?id=${BuildConfig.APPLICATION_ID}</string>
+    <string name="share_app">Share App</string>
+    <string name="sort">sort</string>
+    <string name="splashInterstitialId" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="splashNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="submit">Submit</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="subscribe_on_just_one_click">Subscribe on just one click</string>
+    <string name="sun">Sun</string>
+    <string name="tap_to_turn_off">Tap the button to turn off the flashlight</string>
+    <string name="tap_to_turn_on">Tap the button to turn on the flashlight</string>
+    <string name="tell_us_how_was_your_experience">Did you find our app helpful and convenient?\n
+Let others know by rating us!</string>
+    <string name="try_premium">Try Premium</string>
+    <string name="unlimited_access">Unlimited Access</string>
+    <string name="viewImageNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="zoom">Zoom</string>
+    <style name="ShapeAppearanceOverlay.App.CustomDialog.Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">40dp</item>
+    </style>
+    <style name="Theme.Magnifier" parent="Theme.MaterialComponents.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/regular</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="ratingDialogStyle" parent="@style/ThemeOverlay.AppCompat.Dialog">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.App.CustomDialog.Rounded
+        </item>
+        <item name="colorSurface">@color/white</item>
+    </style>
+    <style name="titleText" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

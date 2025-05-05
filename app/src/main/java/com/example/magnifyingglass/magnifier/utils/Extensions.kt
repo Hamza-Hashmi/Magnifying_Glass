@@ -28,7 +28,6 @@ import com.permissionx.guolindev.PermissionX
 import java.io.File
 
 
-
 var exitNativeAd: NativeAd? = null
 
 fun Context.scanMedia(path: String) {
@@ -52,9 +51,6 @@ fun Context.rateUs() {
     val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=$packageName"))
     startActivity(intent)
 }
-
-
-
 
 fun <T> Context.openActivity(it: Class<T>) {
     val intent = Intent(this, it)

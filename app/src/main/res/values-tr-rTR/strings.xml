@@ -64,4 +64,12 @@
     <string name="Closer">Daha Yakından Bakın, Daha Net Bir Görüş: Resim\n Büyüteci Hassasiyeti</string>
     <string name="livelargesee">Büyük Yaşayın, Büyüteç ile Daha Büyük Görün</string>
     <string name="Language">Dil</string>
+    <string name="tap_to_turn_off">El fenerini kapatmak için düğmeye dokunun</string>
+    <string name="tap_to_turn_on">El fenerini açmak için düğmeye dokunun</string>
+    <string name="magnifying_glass">Büyüteç</string>
+    <string name="setting">Ayar</string>
+    <string name="share_app">Uygulamayı Paylaş</string>
+    <string name="app_version">Uygulama Sürümü</string>
+    <string name="languages">Diller</string>
+    <string name="try_premium">Premium\'u deneyin</string>
 </resources>

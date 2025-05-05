@@ -63,7 +63,6 @@ class SavedImagesScreen : BaseActivity() {
 
         }
         binding.btnDeleteAll.setOnClickListener{
-
             deleteAllImages()
 
         }
@@ -120,7 +119,7 @@ class SavedImagesScreen : BaseActivity() {
         binding.ivPlaceHolder.visibility = View.GONE
         imagesAdapter?.let {
             if(it.itemCount>3){
-                binding.layoutNativeLarge.visibility = View.GONE
+                binding.adFrame.visibility = View.GONE
                 showSmallNativeAd()
             }else{
                 binding.layoutNativeSmall.visibility = View.GONE
@@ -135,16 +134,17 @@ class SavedImagesScreen : BaseActivity() {
     private fun showLargeNativeAd(){
         if(isInternetConnected() && remoteConfigViewModel.getRemoteConfig(this@SavedImagesScreen)?.imageMagnifierNativeId?.value == 1){
 
-            binding.layoutNativeLarge.visibility = View.VISIBLE
+            binding.adFrame.visibility = View.VISIBLE
 
             loadAndShowNativeAd(
-                binding.layoutNativeLarge,
+                binding.adFrame,
+                binding.shimmerFrameLayout.root,
                 R.layout.native_ad_layout_main,
                 getString(R.string.savedImagesNativeId)
 
             )
         }else{
-            binding.layoutNativeLarge.visibility = View.GONE
+            binding.adFrame.visibility = View.GONE
         }
 
     }
@@ -154,13 +154,14 @@ class SavedImagesScreen : BaseActivity() {
 
             binding.layoutNativeSmall.visibility = View.VISIBLE
             loadAndShowNativeAd(
-                binding.layoutNativeSmall,
+                binding.adFrame,
+                binding.shimmerFrameLayout.root,
                 R.layout.native_ad_layout_small,
                 getString(R.string.savedImagesNativeId)
 
             )
         }else{
-            binding.layoutNativeSmall.visibility = View.GONE
+            binding.adFrame.visibility = View.GONE
         }
     }
 
@@ -168,7 +169,7 @@ class SavedImagesScreen : BaseActivity() {
         binding.progressbar.visibility = View.GONE
         binding.rvImages.visibility = View.GONE
         binding.ivPlaceHolder.visibility = View.VISIBLE
-        binding.layoutNativeLarge.visibility = View.GONE
+        binding.adFrame.visibility = View.GONE
         binding.layoutNativeSmall.visibility = View.GONE
         showLargeNativeAd()
     }

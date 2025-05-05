@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Automatically generated file. DO NOT MODIFY -->
+
+    <!-- Value from build type: debug -->
+    <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <!-- Value from build type: debug -->
+    <string name="app_open_id" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <!-- Value from build type: debug -->
+    <string name="bannerId" translatable="false">ca-app-pub-3940256099942544/2014213617</string>
+    <!-- Value from build type: debug -->
+    <string name="exitNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <!-- Value from build type: debug -->
+    <string name="imageMagnifierNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <!-- Value from build type: debug -->
+    <string name="interstitialId" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <!-- Value from build type: debug -->
+    <string name="languagesNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <!-- Value from build type: debug -->
+    <string name="liveMagnifierNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <!-- Value from build type: debug -->
+    <string name="mainNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <!-- Value from build type: debug -->
+    <string name="onBoardingNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <!-- Value from build type: debug -->
+    <string name="onBoardingNativeIdFull" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <!-- Value from build type: debug -->
+    <string name="pdfViewerNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <!-- Value from build type: debug -->
+    <string name="savedImagesNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <!-- Value from build type: debug -->
+    <string name="settingsNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <!-- Value from build type: debug -->
+    <string name="splashInterstitialId" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <!-- Value from build type: debug -->
+    <string name="splashNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <!-- Value from build type: debug -->
+    <string name="viewImageNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+
+</resources>

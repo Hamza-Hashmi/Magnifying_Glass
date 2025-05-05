@@ -1,0 +1,19 @@
+com.example.magnifyingglass.magnifier.test
+string admob_app_id
+string app_open_id
+string bannerId
+string exitNativeId
+string imageMagnifierNativeId
+string interstitialId
+string languagesNativeId
+string liveMagnifierNativeId
+string mainNativeId
+string onBoardingNativeId
+string pdfViewerNativeId
+string savedImagesNativeId
+string settingsNativeId
+string splashInterstitialId
+string splashNativeId
+string viewImageNativeId
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

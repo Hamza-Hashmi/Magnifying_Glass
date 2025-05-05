@@ -64,4 +64,12 @@
     <string name="Closer">Pandangan Lebih Dekat, Penglihatan Lebih Jelas: Ketepatan\n Kaca Pembesar Imej</string>
     <string name="livelargesee">Hidup Besar, Lihat Lebih Besar dengan Kaca Pembesar Kami</string>
     <string name="Language">Bahasa</string>
+    <string name="tap_to_turn_off">Ketik butang untuk mematikan lampu suluh</string>
+    <string name="tap_to_turn_on">Ketik butang untuk menghidupkan lampu suluh</string>
+    <string name="magnifying_glass">Kaca Pembesar</string>
+    <string name="setting">Tetapan</string>
+    <string name="share_app">Kongsi Apl</string>
+    <string name="app_version">Versi Apl</string>
+    <string name="languages">Bahasa</string>
+    <string name="try_premium">Cuba Premium</string>
 </resources>

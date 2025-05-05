@@ -4,11 +4,6 @@ import android.app.Application
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.ProcessLifecycleOwner
-import com.example.magnifyingglass.magnifier.ads.OpenApp
-import com.google.android.gms.ads.MobileAds
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.GlobalContext

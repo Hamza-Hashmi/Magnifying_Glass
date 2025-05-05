@@ -10,8 +10,10 @@
     <color name="activityBgColor2">#E9F0FE</color>
 
     <color name="rippleColorOnWhite">#272B50</color>
+    <color name="textColorOnWhite">#18457F</color>
     <color name="shimmerColor">#DADADA</color>
     <color name="black">#000</color>
+    <color name="black_50">#80000000</color>
 
     <color name="ad_attribution_color2">#BEBEBE</color>
     <color name="rippleColorOnBlack">#94FFFFFF</color>

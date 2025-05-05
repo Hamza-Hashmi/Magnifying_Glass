@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="app_open_id" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="bannerId" translatable="false">ca-app-pub-3940256099942544/2014213617</string>
+    <string name="exitNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="imageMagnifierNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="interstitialId" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="languagesNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="liveMagnifierNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="mainNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="onBoardingNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="pdfViewerNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="savedImagesNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="settingsNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="splashInterstitialId" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="splashNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="viewImageNativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <style name="WhiteBackgroundDialogTheme" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
+<item name="android:windowNoTitle">true</item>
+<item name="android:windowFullscreen">false</item>
+<item name="android:fadingEdge">none</item>
+<item name="android:windowBackground">@android:color/white</item>
+<item name="android:windowAnimationStyle">@null</item>
+</style>
+    <style name="WhiteBackgroundTheme" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+<item name="android:windowNoTitle">true</item>
+<item name="android:windowFullscreen">false</item>
+<item name="android:fadingEdge">none</item>
+<item name="android:windowBackground">@android:color/white</item>
+<item name="android:windowAnimationStyle">@null</item>
+</style>
+</resources>
